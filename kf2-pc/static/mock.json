@@ -1,0 +1,203 @@
+{
+    "get-app-list": {
+        "code": 10000,
+        "msg": "success",
+        "data": [
+            {
+                "pId": 1,
+                "appname": "龙符",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/CmlJTloNYXKALHNRAAHLlohkEgk42.jpeg",
+                "app_list": {
+                    "android": "100000010",
+                    "ios": "100000015"
+                }
+            },
+            {
+                "pId": 2,
+                "appname": "锦绣未央",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg",
+                "app_list": {
+                    "android": "100000017",
+                    "ios": "100000018"
+                }
+            },
+            {
+                "pId": 3,
+                "appname": "凯撒demo",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/Cml5Jln71BmACkkQAAAKHz2koZA898.png",
+                "app_list": {
+                    "android": "100000001",
+                    "ios": "100000002"
+                }
+            },
+            {
+                "pId": 4,
+                "appname": "传世霸业",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTln6gcqAOo-yAAAKHz2koZA664.png",
+                "app_list": {
+                    "android": "100000008",
+                    "ios": "100000009"
+                }
+            },
+            {
+                "pId": 5,
+                "appname": "妖精的尾巴",
+                "icon": "//sxcdn.ksgame.com/group1/M00/01/00/CmnEGVsZDQqALg6NAAAardJU5LI27.jpeg",
+                "app_list": {
+                    "android": "100000026",
+                    "ios": "100000026"
+                }
+            },
+            {
+                "pId": 1,
+                "appname": "梦幻传奇",
+                "icon": "//sxcdn.ksgame.com/group1/M00/00/01/CmnEGVt_xqKAVTo5AAFFNW2QzTY09.jpeg",
+                "app_list": {
+                    "android": "100000014",
+                    "ios": "100000016"
+                }
+            },
+            {
+                "pId": 7,
+                "appname": "test2",
+                "icon": "//sxcdn.ksgame.com/group1/M00/00/01/CmnEGVuEqJ2ACVGIAAQ_c9sgblA08.jpeg",
+                "app_list": {
+                    "android": "100000003",
+                    "ios": "100000004"
+                }
+            }
+        ]
+    },
+    "scroll": {
+        "code": 10000,
+        "msg": "success",
+        "data": [
+            {
+                "id": "150951640347763368",
+                "index": 1509692623,
+                "title": "dfdfd",
+                "status": 1,
+                "image_url": "//kfcdn.ksgame.com/group1/M00/01/01/Cml5Jln5ZHGAfaoaAAJZMSJXdog134.png",
+                "type": 2,
+                "context": "dfdfdf",
+                "link": "",
+                "updated_at": 1534128653
+            },
+            {
+                "id": "150969262375993383",
+                "index": 1534128650,
+                "title": "内链轮播图",
+                "status": 1,
+                "image_url": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTln8FMuAL9gWAAAx4o79PK493.jpeg",
+                "type": 2,
+                "context": "<p>水电费而供热管<img alt=\"[疑问]\" src=\"http://115.159.189.146:8022/libs/layui/images/face/27.gif\"></p><p>沙发斯蒂芬<img alt=\"[酷]\" src=\"http://115.159.189.146:8022/libs/layui/images/face/36.gif\"></p>",
+                "link": "",
+                "updated_at": 1534128652
+            },
+            {
+                "id": "153415665055096379",
+                "index": 1534156650,
+                "title": "打发打发",
+                "status": 1,
+                "update_time": 1534156656,
+                "image_url": "//sxcdn.ksgame.com/group1/M00/00/01/CmnEGVtxX2mALPYwAAL5nCX4Moo354.png",
+                "type": 1,
+                "context": "",
+                "link": "https://www.baidu.com",
+                "created_at": 1534156650,
+                "updated_at": 1534156656
+            },
+            {
+                "id": "153554339190136653",
+                "index": 1535543391,
+                "title": "11",
+                "status": 1,
+                "image_url": "//sxcdn.ksgame.com/group1/M00/01/00/CmnEGVuGiF6AOQaFAAFKUEfksoA85.jpeg",
+                "type": 1,
+                "context": "",
+                "link": "http://www.baidu.com",
+                "created_at": 1535543391,
+                "updated_at": 1535543400
+            }
+        ]
+    },
+    "keywords": {
+        "code": 10000,
+        "msg": "success",
+        "data": [
+            "充值",
+            "升级",
+            "登录",
+            "角色角色角色角色",
+            "充值",
+            "升级",
+            "登录",
+            "手游防"
+        ]
+    },
+    "announcement": {
+        "code": 10000,
+        "msg": "success",
+        "data": []
+    },
+    "hot": {
+        "code": 10000,
+        "msg": "success",
+        "data": [
+            {
+                "id": "1497856693834188090",
+                "title": "无法提单，提示“请不要",
+                "color": "FFFFFF",
+                "desc": "<p>&nbsp; &nbsp; &nbsp; &nbsp; 同一类型的问题，每个角色只能同时提交1个问题。请您留意是否在近期有提交过同一类型问题。建议您等待上一个问题处理完毕后，再进行申诉。</p>",
+                "count": 0,
+                "useful": 0,
+                "useless": 1,
+                "total": 1,
+                "comment": 0,
+                "intro": "undefined"
+            },
+            {
+                "id": "1497856757765288110",
+                "title": "手游防骗指南",
+                "color": "FFFFFF",
+                "desc": "<p>&nbsp; “我号给别人代玩，东西都给乱用啦，能不能恢复啊？”这是小编了解到一个玩家账号被骗的真实情况。目前手游里的骗术多种多样，而玩家稍不小心就会掉进陷阱当中，小编为大家分享几类手游世界里面常见骗术，有备无患。</p><p>&nbsp;</p><p><b>一、代充折扣优惠</b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 这类骗术往往都是利用玩家贪小便宜的心里而得逞，骗子常常在世界聊天频道、私聊、甚至通过发送邮件，来宣传代充返利和联系方式，此类广告中给出的折扣和优惠特别诱人，例如常见的“50元=10000元宝+VIP5……”。等加上骗子QQ后，骗子会以各种理由，要求你先打款，或先打部分款项。而当你禁不住诱惑，打算先打部分款项试一试的时候，那你就上当啦。往往都是等你打完款后，骗子就消失了。</p><p>防范攻略：坚定内心，切勿贪小便宜，通过正规的渠道进行充值。</p><p>&nbsp;</p><p><b>二、代练只为盗号</b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 游戏中经常会有一些兄弟长、兄弟短，称呼特别亲切，时刻关注你是否有时间玩游戏的人，此类玩家要提高警惕哦，他们往往都是先和你拉关系，取得信任后，会以代玩为借口，向你索取账号。当你犹豫不决时，他们会向你发射一颗颗糖衣炮弹，而当你以为手游的东西都不能交易，共享也没多大风险，放松警惕时。就是他们得逞的时候了。不少游戏玩家都是因为找代练，共享账号，导致账号被人恶意操作，出现不可挽回的损失。</p><p>防范攻略：天下没有免费的午餐，提高警惕，</p><p>&nbsp;</p><p><b>三、线下交易买卖账号</b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 这类诈骗非常常见,卖家会以不玩、换区为由，低价出售账号，有些甚至会先给号你试玩一段时间，让你觉得可以再购买。因为是先给号，大多买家都觉得很放心，购买之后，卖家还会联系游戏客服，解除账号上面的手机绑定等安全信息，买家认为这样就百分之百安全，然而，殊不知，一段时间后还是会被卖家以申诉的方式找回，由于官方是不支持账号线下交易的，然而此类问题玩家所出现的损失将会由玩家自行承担。</p><p>防范攻略：我们的账号并不支持交易，线下交易的账号始终都存在安全隐患。</p>",
+                "count": 0,
+                "useful": 3,
+                "useless": 0,
+                "total": 3,
+                "comment": 0,
+                "intro": "undefined"
+            },
+            {
+                "id": "1497856792810988130",
+                "title": "闪退问题001",
+                "color": "FFFFFF",
+                "desc": "<p>1、请先关闭游戏后台程序，等待2-3分钟再重新登录尝试。</p><p>2、关闭游戏，大退一下，清理下手机内存，然后再重新登录。</p><p>3、尽量关闭其他手机程序，避免过多程序在后台运行；</p>",
+                "count": 0,
+                "useful": 1,
+                "useless": 0,
+                "total": 1,
+                "comment": 0,
+                "intro": "undefined"
+            },
+            {
+                "id": "1497856718003588100",
+                "title": "网络异常の常见解决方法",
+                "color": "FFFFFF",
+                "desc": "<p><b>步骤1、查看官网是否有相关公告。</b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 服务器维护、网络异常导致无法登陆时会及时发布公告。请根据公告标示的维护周期合理安排游戏时间。 &nbsp;&nbsp;</p><p><b>步骤2、检查网络是否通畅，网络通畅是游戏正常登陆的基础。</b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 检测方式如下：</p><p>&nbsp; &nbsp; &nbsp; &nbsp; A.尝试是否能够正常打开网页，如果可以打开，请重新尝试更新</p><p>&nbsp; &nbsp; &nbsp; &nbsp; B.如果您使用的是Wifi：建议您将手机网络从Wifi状态下切换到3G/4G网络尝试；若依旧异常，建议联系网络运营商咨询是否有异常（有很多不同公司的运营商，如电信、联通、铁通）</p><p>&nbsp; &nbsp; &nbsp; &nbsp; C.如果您使用的是移动网络（3G/4G）：建议您将手机网络从3G/4G网络切换到WIFI状态下再试试；若依旧异常，请检查路由器设置是否正确（路由器设置请参考各路由器说明书）；若路由器存在使用时间较长的情况，可以断开路由器电源3-5分钟后，重新连接路由器尝试。 &nbsp; &nbsp;&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; D．若您处于公司/公共场所局域网，请联系相关管理支持人员进行确认</p>",
+                "count": 0,
+                "useful": 3,
+                "useless": 0,
+                "total": 3,
+                "comment": 0,
+                "intro": "服务器维护、网络异常导致无法登陆时会及时发布公告。"
+            }
+        ],
+        "total": 4
+    },
+    "category": {
+        "code": 10000,
+        "msg": "success",
+        "data": []
+    }
+}
