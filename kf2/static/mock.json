@@ -1,0 +1,672 @@
+{
+    "get-app-list": {
+        "code": 10000,
+        "msg": "success",
+        "data": [
+            {
+                "pId": 1,
+                "appname": "龙符",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/CmlJTloNYXKALHNRAAHLlohkEgk42.jpeg",
+                "app_list": {
+                    "android": "100000010",
+                    "ios": "100000015"
+                }
+            },
+            {
+                "pId": 2,
+                "appname": "锦绣未央",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg",
+                "app_list": {
+                    "android": "100000017",
+                    "ios": "100000018"
+                }
+            },
+            {
+                "pId": 3,
+                "appname": "凯撒demo",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/Cml5Jln71BmACkkQAAAKHz2koZA898.png",
+                "app_list": {
+                    "android": "100000001",
+                    "ios": "100000002"
+                }
+            },
+            {
+                "pId": 4,
+                "appname": "传世霸业",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTln6gcqAOo-yAAAKHz2koZA664.png",
+                "app_list": {
+                    "android": "100000008",
+                    "ios": "100000009"
+                }
+            },
+            {
+                "pId": 5,
+                "appname": "妖精的尾巴",
+                "icon": "//sxcdn.ksgame.com/group1/M00/01/00/CmnEGVsZDQqALg6NAAAardJU5LI27.jpeg",
+                "app_list": {
+                    "android": "100000026",
+                    "ios": "100000026"
+                }
+            },
+            {
+                "pId": 1,
+                "appname": "梦幻传奇",
+                "icon": "//sxcdn.ksgame.com/group1/M00/00/01/CmnEGVt_xqKAVTo5AAFFNW2QzTY09.jpeg",
+                "app_list": {
+                    "android": "100000014",
+                    "ios": "100000016"
+                }
+            },
+            {
+                "pId": 7,
+                "appname": "test2",
+                "icon": "//sxcdn.ksgame.com/group1/M00/00/01/CmnEGVuEqJ2ACVGIAAQ_c9sgblA08.jpeg",
+                "app_list": {
+                    "android": "100000003",
+                    "ios": "100000004"
+                }
+            }
+        ]
+    },
+    "hot": {
+        "code": 10000,
+        "msg": "success",
+        "data": [
+            {
+                "id": "150630890971402734",
+                "title": "网络异常の常见解决方法",
+                "color": "000000",
+                "desc": "<p><b><font color=\"#c24f4a\">步骤1、查看官网是否有相关公告。</font></b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 服务器维护、网络异常导致无法登陆时会及时发布公告。请根据公告标示的维护周期合理安排游戏时间。 &nbsp;&nbsp;</p><p><b><font color=\"#c24f4a\">步骤2、检查网络是否通畅，网络通畅是游戏正常登陆的基础。</font></b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 检测方式如下：</p><p>&nbsp; &nbsp; &nbsp; &nbsp; A.尝试是否能够正常打开网页，如果可以打开，请重新尝试更新</p><p>&nbsp; &nbsp; &nbsp; &nbsp; B.如果您使用的是Wifi：建议您将手机网络从Wifi状态下切换到3G/4G网络尝试；若依旧异常，建议联系网络运营商咨询是否有异常（有很多不同公司的运营商，如电信、联通、铁通）</p><p>&nbsp; &nbsp; &nbsp; &nbsp; C.如果您使用的是移动网络（3G/4G）：建议您将手机网络从3G/4G网络切换到WIFI状态下再试试；若依旧异常，请检查路由器设置是否正确（路由器设置请参考各路由器说明书）；若路由器存在使用时间较长的情况，可以断开路由器电源3-5分钟后，重新连接路由器尝试。 &nbsp; &nbsp;&nbsp;</p><p><!--StartFragment--><!--EndFragment--></p><p>&nbsp; &nbsp; &nbsp; &nbsp; D．若您处于公司/公共场所局域网，请联系相关管理支持人员进行确认</p>",
+                "count": 0,
+                "useful": 23,
+                "useless": 7,
+                "total": 30,
+                "comment": 0,
+                "intro": "网络有问题请看这里11"
+            },
+            {
+                "id": "150631111551102752",
+                "title": "登录失败hkhkh",
+                "color": "000000",
+                "desc": "<p><!--StartFragment-->登录失败<!--EndFragment-->&nbsp;登录失败 trtrtr</p>",
+                "count": 0,
+                "useful": 8,
+                "useless": 2,
+                "total": 10,
+                "comment": 0,
+                "intro": "登录失败hkhkh"
+            },
+            {
+                "id": "150632983444632761",
+                "title": "testtest",
+                "color": "000000",
+                "desc": "<p>testtest111</p>",
+                "count": 0,
+                "useful": 3,
+                "useless": 4,
+                "total": 7,
+                "comment": 0,
+                "intro": "undefined"
+            },
+            {
+                "id": "150630896951582735",
+                "title": "手游防骗指南",
+                "color": "000000",
+                "desc": "<p>&nbsp; “我号给别人代玩，东西都给乱用啦，能不能恢复啊？”这是小编了解到一个玩家账号被骗的真实情况。目前手游里的骗术多种多样，而玩家稍不小心就会掉进陷阱当中，小编为大家分享几类手游世界里面常见骗术，有备无患。</p><p>&nbsp;</p><p><b>一、代充折扣优惠</b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 这类骗术往往都是利用玩家贪小便宜的心里而得逞，骗子常常在世界聊天频道、私聊、甚至通过发送邮件，来宣传代充返利和联系方式，此类广告中给出的折扣和优惠特别诱人，例如常见的“50元=10000元宝+VIP5……”。等加上骗子QQ后，骗子会以各种理由，要求你先打款，或先打部分款项。而当你禁不住诱惑，打算先打部分款项试一试的时候，那你就上当啦。往往都是等你打完款后，骗子就消失了。</p><p>防范攻略：坚定内心，切勿贪小便宜，通过正规的渠道进行充值。</p><p>&nbsp;</p><p><b>二、代练只为盗号</b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 游戏中经常会有一些兄弟长、兄弟短，称呼特别亲切，时刻关注你是否有时间玩游戏的人，此类玩家要提高警惕哦，他们往往都是先和你拉关系，取得信任后，会以代玩为借口，向你索取账号。当你犹豫不决时，他们会向你发射一颗颗糖衣炮弹，而当你以为手游的东西都不能交易，共享也没多大风险，放松警惕时。就是他们得逞的时候了。不少游戏玩家都是因为找代练，共享账号，导致账号被人恶意操作，出现不可挽回的损失。</p><p>防范攻略：天下没有免费的午餐，提高警惕，</p><p>&nbsp;</p><p><b>三、线下交易买卖账号</b></p><p>&nbsp; &nbsp; &nbsp; &nbsp; 这类诈骗非常常见,卖家会以不玩、换区为由，低价出售账号，有些甚至会先给号你试玩一段时间，让你觉得可以再购买。因为是先给号，大多买家都觉得很放心，购买之后，卖家还会联系游戏客服，解除账号上面的手机绑定等安全信息，买家认为这样就百分之百安全，然而，殊不知，一段时间后还是会被卖家以申诉的方式找回，由于官方是不支持账号线下交易的，然而此类问题玩家所出现的损失将会由玩家自行承担。</p><p><!--StartFragment--><!--EndFragment--></p><p>防范攻略：我们的账号并不支持交易，线下交易的账号始终都存在安全隐患。</p>",
+                "count": 0,
+                "useful": 4,
+                "useless": 4,
+                "total": 8,
+                "comment": 0,
+                "intro": "111"
+            },
+            {
+                "id": "150631107574952751",
+                "title": "登录失败",
+                "color": "000000",
+                "desc": "<p><b>登录失败的问题，请提交反馈给客服，客服会在1-2个工作日给到回复。</b></p>",
+                "count": 0,
+                "useful": 7,
+                "useless": 2,
+                "total": 9,
+                "comment": 0,
+                "intro": "阿斯达所大所多"
+            },
+            {
+                "id": "150641620942282793",
+                "title": "忽如一夜春风来千树万树梨花开好",
+                "color": "FFB459",
+                "desc": "<p><b>角色登录时，<u>​</u><span style=\"line-height: 24px;\">​</span><span style=\"line-height: 24px;\">​</span><span style=\"line-height: 1.5;\">页面卡死​</span><u style=\"line-height: 1.5;\">​</u><span style=\"line-height: 24px;\">​</span><span style=\"line-height: 24px;\">​</span><span style=\"line-height: 24px;\">​</span><span style=\"line-height: 24px;\">​</span></b></p>",
+                "count": 0,
+                "useful": 4,
+                "useless": 3,
+                "total": 7,
+                "comment": 0,
+                "intro": "角色登录时，​​​页面卡死​​​​​​01"
+            },
+            {
+                "id": "150656677462212956",
+                "title": "技能无敌技能无敌技",
+                "color": "FF660D",
+                "desc": "<p>技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长<span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span><span style=\"line-height: 1.5;\">技能不断增长技能不断增长技能不断增长技能不断增长技能不断增长</span></p>",
+                "count": 0,
+                "useful": 3,
+                "useless": 1,
+                "total": 4,
+                "comment": 0,
+                "intro": "技能不断增长技能不断增长技能不断没看健康科技看看看"
+            },
+            {
+                "id": "150656708303342957",
+                "title": "凯撒001凯撒001凯撒00",
+                "color": "FFBE85",
+                "desc": "<p>凯撒001<span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span><span style=\"line-height: 1.5;\">凯撒001</span></p>",
+                "count": 0,
+                "useful": 1,
+                "useless": 1,
+                "total": 2,
+                "comment": 0,
+                "intro": "凯撒凯撒凯撒凯撒凯撒凯撒凯撒凯撒"
+            },
+            {
+                "id": "150656795054102960",
+                "title": "928",
+                "color": "000000",
+                "desc": "<p>阿斯达所大所</p>",
+                "count": 0,
+                "useful": 4,
+                "useless": 3,
+                "total": 7,
+                "comment": 0,
+                "intro": "啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+            },
+            {
+                "id": "150657082334442978",
+                "title": "今日有奖",
+                "color": "000000",
+                "desc": "<p>今日有奖<span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span><span style=\"line-height: 1.5;\">今日有奖</span></p>",
+                "count": 0,
+                "useful": 0,
+                "useless": 0,
+                "total": 0,
+                "comment": 0,
+                "intro": "发货的"
+            },
+            {
+                "id": "150659184822023031",
+                "title": "角色002",
+                "color": "000000",
+                "desc": "<p>诶我去热无</p>",
+                "count": 0,
+                "useful": 1,
+                "useless": 1,
+                "total": 2,
+                "comment": 0,
+                "intro": "学习学习学习学习学习学习学习学习学习学习学习学习学习学习学习学"
+            },
+            {
+                "id": "150659191151773032",
+                "title": "角色003",
+                "color": "000000",
+                "desc": "<p>和进度哈斯卡计划第三考核</p>",
+                "count": 0,
+                "useful": 2,
+                "useless": 1,
+                "total": 3,
+                "comment": 0,
+                "intro": "啦啦啦啦啦啦啦啊啊阿罗拉啦啦啦啦啦啦啦"
+            },
+            {
+                "id": "150666512999063110",
+                "title": "家族 家族 家族家族增加在",
+                "color": "DD8CFF",
+                "desc": "<h4><u><strike>撒娇分别博大精深<span style=\"line-height: 1.5;\">撒娇分别博大精深</span><span style=\"line-height: 1.5;\">撒娇分别博大精深</span><span style=\"line-height: 1.5;\">撒娇分别博</span></strike></u></h4>",
+                "count": 0,
+                "useful": 2,
+                "useless": 0,
+                "total": 2,
+                "comment": 0,
+                "intro": "撒娇分别博大精深撒娇分别博大精深撒娇分别博大"
+            },
+            {
+                "id": "150666540760413111",
+                "title": "撒娇分别博大精深撒娇分别博大个",
+                "color": "E7FFC7",
+                "desc": "<p><!--StartFragment--><spanhelvetica neue',=\"\" helvetica,=\"\" 'pingfang=\"\" sc',=\"\" 微软雅黑,=\"\" tahoma,=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;=\"\" font-style:=\"\" normal;=\"\" font-variant:=\"\" font-weight:=\"\" letter-spacing:=\"\" line-height:=\"\" 24px;=\"\" orphans:=\"\" auto;=\"\" text-align:=\"\" start;=\"\" text-indent:=\"\" 0px;=\"\" text-transform:=\"\" none;=\"\" white-space:=\"\" widows:=\"\" 1;=\"\" word-spacing:=\"\" -webkit-text-stroke-width:=\"\" display:=\"\" inline=\"\" !important;=\"\" float:=\"\" background-color:=\"\" rgb(255,=\"\" 255,=\"\" 255);\"=\"\">撒娇分别博大精深撒娇分别博大精深</spanhelvetica><br></p>",
+                "count": 0,
+                "useful": 1,
+                "useless": 0,
+                "total": 1,
+                "comment": 0,
+                "intro": "撒娇分别博大精深撒娇分别博大精深撒娇分别博大精深撒娇分别博大精深撒娇分别博大精深撒娇分别"
+            },
+            {
+                "id": "150666547833533112",
+                "title": "封地001",
+                "color": "FFCC99",
+                "desc": "<p>的背景凯撒红离开的哈萨克累计登录</p>",
+                "count": 0,
+                "useful": 2,
+                "useless": 1,
+                "total": 3,
+                "comment": 0,
+                "intro": "撒娇分别博大精深撒娇分别博大精深撒娇分别博大"
+            },
+            {
+                "id": "150666759232273129",
+                "title": "家族000000022",
+                "color": "FFB969",
+                "desc": "<p><u>家族000000022​</u></p>",
+                "count": 0,
+                "useful": 2,
+                "useless": 0,
+                "total": 2,
+                "comment": 0,
+                "intro": "家族000000022"
+            },
+            {
+                "id": "150666773464723130",
+                "title": "充值520",
+                "color": "FF8957",
+                "desc": "<p><b><i>​<span style=\"line-height: 1.5;\">充值5201</span></i></b><br></p>",
+                "count": 0,
+                "useful": 4,
+                "useless": 2,
+                "total": 6,
+                "comment": 0,
+                "intro": "充值520"
+            },
+            {
+                "id": "150961462397163379",
+                "title": "手游防骗指南hkdsss",
+                "color": "000000",
+                "desc": "<p>充多发点沙发是的发送到发送到发送到发送到多发点沙发是的发送到发送到发送到发送到多发点沙发是的发送到发送到发送到发送到多发点沙发是的发送到发送到发送到发送到</p>",
+                "count": 0,
+                "useful": 3,
+                "useless": 1,
+                "total": 4,
+                "comment": 0,
+                "intro": "大多发生的"
+            },
+            {
+                "id": "150961480896643380",
+                "title": "发达胜多负少的",
+                "color": "000000",
+                "desc": "<p>打得十分值达到法定</p>",
+                "count": 0,
+                "useful": 0,
+                "useless": 2,
+                "total": 2,
+                "comment": 0,
+                "intro": "分公司梵蒂冈"
+            },
+            {
+                "id": "153509114509286588",
+                "title": "锦绣ios",
+                "color": "000000",
+                "desc": "<p>锦绣ios</p>",
+                "count": 0,
+                "useful": 0,
+                "useless": 0,
+                "total": 0,
+                "comment": 0,
+                "intro": "锦绣ios"
+            },
+            {
+                "id": "153509319193086589",
+                "title": "锦绣未央安卓",
+                "color": "000000",
+                "desc": "<p>锦绣未央安卓</p>",
+                "count": 0,
+                "useful": 0,
+                "useless": 0,
+                "total": 0,
+                "comment": 0,
+                "intro": "锦绣未央安卓"
+            }
+        ],
+        "total": 21
+    },
+    "category": {
+        "code": 10000,
+        "msg": "success",
+        "data": [
+            {
+                "cId": "59c871e343ebef779026fbe6",
+                "name": "家族",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/Cml5JlnMoyGAIsJLAAAEZ3vOG44007.png"
+            },
+            {
+                "cId": "59c871ea43ebef7786222267",
+                "name": "婚姻",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTlnMozqAfiEiAAAFzKUcAko183.png"
+            },
+            {
+                "cId": "59c871ff43ebef776c727bd2",
+                "name": "外观",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTlnMo1mAUqhuAAADzoCUxzs154.png"
+            },
+            {
+                "cId": "59c875fb43ebef77880118fb",
+                "name": "宠物",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTlnMo4CAZndDAAAFrS7swVg109.png"
+            },
+            {
+                "cId": "59c8764643ebef77724829bf",
+                "name": "任务",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTlnMo-GASpomAAAFAn-FfbM307.png"
+            },
+            {
+                "cId": "59c8765243ebef77774f37e7",
+                "name": "战斗",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/Cml5JlnMo_iAfTY-AAAG7RiLnpI115.png"
+            },
+            {
+                "cId": "59c8763243ebef776c727bd6",
+                "name": "竞技",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTlnMpAuAKK8IAAAHpysVi6Y835.png"
+            },
+            {
+                "cId": "59c8765c43ebef7771025c8b",
+                "name": "装备",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/Cml5JlnMpBqAWUo2AAAEqsd61qc459.png"
+            },
+            {
+                "cId": "59c8766843ebef7779771fb4",
+                "name": "组队",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTlnMpEeAYFjVAAAG8sW6L9Q272.png"
+            },
+            {
+                "cId": "5b836a0043ebef32c262c892",
+                "name": "测试",
+                "icon": "//sxcdn.ksgame.com/group1/M00/00/01/CmnEGVuDaf-AW9r4AAAHtklhccQ486.png"
+            }
+        ]
+    },
+    "announcement": {
+        "code": 10000,
+        "msg": "success",
+        "data": [
+            {
+                "id": "150994018897443388",
+                "title": "测试004",
+                "desc": "撒旦法",
+                "type": "2",
+                "link": "",
+                "frequency": 1000
+            },
+            {
+                "id": "153509290748911089",
+                "title": "aaaa",
+                "desc": "aaaa",
+                "type": "2",
+                "link": "",
+                "frequency": 1000
+            },
+            {
+                "id": "153509122562501088",
+                "title": "测试-lhl",
+                "desc": "<p>test、test、test、test、test、test、test、test、test、test、test、test、test、</p>",
+                "type": "2",
+                "link": "",
+                "frequency": 1000
+            },
+            {
+                "id": "153414914290126378",
+                "title": "锦绣未央~我是未央，你是谁2",
+                "desc": "<p>锦绣未央~我是未央，你是</p><p>谁锦绣未央~我是未央，你是谁</p>",
+                "type": "2",
+                "link": "",
+                "frequency": 1000
+            }
+        ]
+    },
+    "roles": {
+        "code": 10000,
+        "msg": "获取成功",
+        "data": [
+            {
+                "_id": "5b73cbb343ebef7daa56a761",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "91",
+                "roleId": "100579186314080",
+                "roleName": "肌肉求发达",
+                "channelName": "kaiser_new",
+                "serverName": "",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5b73c85b43ebef7fa73531b1",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "91",
+                "roleId": "100579871755104",
+                "roleName": "国羽毓",
+                "channelName": "kaiser_new",
+                "serverName": "",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5b3b518e43ebef469a71b5f4",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "201",
+                "roleId": "100310035994912",
+                "roleName": "荆育怡",
+                "channelName": "kaiser_new",
+                "serverName": "",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5b3b4e0643ebef38960e8364",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "201",
+                "roleId": "100310035994912",
+                "roleName": "荆育怡",
+                "channelName": "kaiser_new",
+                "serverName": "",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5b3b2d7343ebef66a7030ce4",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "501",
+                "roleId": "100302843091232",
+                "roleName": "头脑求简单",
+                "channelName": "kaiser_new",
+                "serverName": "",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5b399d9643ebef5475157c31",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "201",
+                "roleId": "100302843091232",
+                "roleName": "头脑求简单",
+                "channelName": "kaiser_new",
+                "serverName": "",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5a13d0a543ebef5ca545e79d",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "",
+                "serverId": "2",
+                "roleId": "138949964099",
+                "roleName": "大蚯蚓",
+                "channelName": "",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5a13ce5343ebef23eb13688d",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "",
+                "serverId": "1",
+                "roleId": "138950096975",
+                "roleName": "赵淑香",
+                "channelName": "",
+                "serverName": "联调1服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5a0a53a943ebef2380514c57",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "2",
+                "roleId": "276387439225",
+                "roleName": "殳青媛",
+                "channelName": "kaiser_new",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5a094fa543ebef22943bd2ef",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "2",
+                "roleId": "276387439225",
+                "roleName": "殳青媛",
+                "channelName": "kaiser_new",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5a094a6d43ebef5ca17f3a68",
+                "appId": "100000010",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "1",
+                "roleId": "138947337970",
+                "roleName": "角色1",
+                "channelName": "kaiser_new",
+                "serverName": "联调1服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/CmlJTloNYXKALHNRAAHLlohkEgk42.jpeg"
+            },
+            {
+                "_id": "5a094a0c43ebef5c9b6ebd47",
+                "appId": "100000009",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "1",
+                "roleId": "138947337970",
+                "roleName": "角色1",
+                "channelName": "kaiser_new",
+                "serverName": "联调1服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/CmlJTln6gcqAOo-yAAAKHz2koZA664.png"
+            },
+            {
+                "_id": "5a09499443ebef5c897ccf07",
+                "appId": "100000015",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "2",
+                "roleId": "138947337978",
+                "roleName": "角色2",
+                "channelName": "kaiser_new",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/CmlJTloNYXKALHNRAAHLlohkEgk42.jpeg"
+            },
+            {
+                "_id": "5a09428343ebef237d7be481",
+                "appId": "100000010",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "2",
+                "roleId": "138947337978",
+                "roleName": "角色2",
+                "channelName": "kaiser_new",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/CmlJTloNYXKALHNRAAHLlohkEgk42.jpeg"
+            },
+            {
+                "_id": "5a093ed443ebef5c7c67f3f7",
+                "appId": "100000015",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "1",
+                "roleId": "138947337970",
+                "roleName": "角色1",
+                "channelName": "kaiser_new",
+                "serverName": "联调1服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/CmlJTloNYXKALHNRAAHLlohkEgk42.jpeg"
+            },
+            {
+                "_id": "5a0573d543ebef5c8378dab8",
+                "appId": "100000002",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "2",
+                "roleId": "138947337978",
+                "roleName": "角色2",
+                "channelName": "kaiser_new",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/Cml5Jln71BmACkkQAAAKHz2koZA898.png"
+            },
+            {
+                "_id": "5a0571c143ebef5caa206067",
+                "appId": "100000002",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "1",
+                "roleId": "138947337970",
+                "roleName": "角色1",
+                "channelName": "kaiser_new",
+                "serverName": "联调1服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/01/01/Cml5Jln71BmACkkQAAAKHz2koZA898.png"
+            },
+            {
+                "_id": "5a05679843ebef5c863de022",
+                "appId": "100000018",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "2",
+                "roleId": "138947337978",
+                "roleName": "角色2",
+                "channelName": "kaiser_new",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "5a04019443ebef5c8d40bf74",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "2",
+                "roleId": "138947337978",
+                "roleName": "角色2",
+                "channelName": "kaiser_new",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            },
+            {
+                "_id": "59f1a47f43ebef5ca17f39cf",
+                "appId": "100000017",
+                "appName": "锦绣未央 IOS",
+                "channelId": "100000",
+                "serverId": "2",
+                "roleId": "123",
+                "roleName": "测试003",
+                "channelName": "kaiser_new",
+                "serverName": "联调2服",
+                "icon": "//kfcdn.ksgame.com/group1/M00/00/00/Cml5JloNYfWAdEabAAP2fGmqcl074.jpeg"
+            }
+        ]
+    },
+    "get-server-list":{"code":10000,"msg":"success","data":{"app":{"appid":"100000017","appname":"锦绣未央","icon":"/static/img/app_icon.100000017.png"},"serverList":[{"serverName":"首发测试服","id":"910"},{"serverName":"先遣测试服","id":"930"}],"channelList":[{"channelNo":"100000","channelName":"kaiser_new"},{"channelNo":"100002","channelName":"小米"},{"channelNo":"100008","channelName":"应用宝"},{"channelNo":"100011","channelName":"uc"},{"channelNo":"100004","channelName":"oppo"},{"channelNo":"100006","channelName":"vivo"},{"channelNo":"100009","channelName":"酷派"},{"channelNo":"100001","channelName":"qihoo 360"},{"channelNo":"100005","channelName":"百度"},{"channelNo":"100015","channelName":"金立"},{"channelNo":"100003","channelName":"魅族"},{"channelNo":"100007","channelName":"华为"},{"channelNo":"100010","channelName":"Lenovo"},{"channelNo":"100033","channelName":"美图"},{"channelNo":"100034","channelName":"bilibili"},{"channelNo":"100038","channelName":"快看"},{"channelNo":"100037","channelName":"三星"},{"channelNo":"100017","channelName":"爱奇艺"},{"channelNo":"100036","channelName":"HTC"},{"channelNo":"100032","channelName":"努比亚"},{"channelNo":"100035","channelName":"阅文"},{"channelNo":"100039","channelName":"锦绣十月买量测试"},{"channelNo":"100040","channelName":"掌心游"},{"channelNo":"100025","channelName":"靠谱助手"},{"channelNo":"100041","channelName":"游戏fan"},{"channelNo":"100031","channelName":"taptap"},{"channelNo":"100042","channelName":"好游快爆"},{"channelNo":"100043","channelName":"今日头条"},{"channelNo":"100045","channelName":"快手"},{"channelNo":"100044","channelName":"华为微端"}]}},
+    
+}

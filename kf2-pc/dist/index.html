@@ -1,6 +1,95 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,user-scalable=no"><meta name="keywords" content=" "><meta name="description" content=" "><title>凯撒游戏客服中心</title><link rel="icon" type="image/ico" href="/static/dist-pc/img/favicon.ico"><link rel="shortcut icon" type="image/x-icon" href="/static/dist-pc/img/favicon.ico"><link rel="stylesheet" href="/static/dist-pc/lib/layui/css/layui.css?rev=754f62d59699ebe22dbfd023c7eab00e"><link rel="stylesheet" href="/static/dist-pc/css/main.css?rev=a8072a34430d9c2316202f6b6beed7e3"><script type="text/javascript" src="/static/dist-pc/lib/avalon/avalon.js?rev=aba60523ada7be083d11f3f7ad010bec"></script><script type="text/javascript" src="/static/dist-pc/lib/jquery/jquery.min.js?rev=4f252523d4af0b478c810c2547a63e19"></script><script type="text/javascript" src="/static/dist-pc/lib/webuploader/webuploader.min.js?rev=5f84bea2033b6fcdd63f456f953f121a"></script><!--[if lt IE 9]>
-<script type="text/javascript" src="/static/dist-pc/lib/polyfill/es5-shim.js?rev=54d756fb527d24cba82ed3fbce94a014"></script>
-<script type="text/javascript" src="/static/dist-pc/lib/polyfill/es5-sham.js?rev=02be501c30772d8a280f74194165758e"></script>
-<![endif]--><!--[if lt IE 10]>
-<script type="text/javascript" src="/static/dist-pc/lib/placeholders/placeholders.jquery.min.js?rev=a174a677ef7798a1adbda44b740996f5"></script>
-<![endif]--><script type="text/javascript" src="/static/dist-pc/lib/layui/layui.js?rev=1cc5848ec75da1feb2ae0fea0834f693"></script><script type="text/javascript" src="/static/dist-pc/js/component.js?rev=de9c064cc51d5e62153c05f32ac2901b"></script><script type="text/javascript" src="/static/dist-pc/js/index.js?rev=d258f74859b48ed74d2787af9954302c"></script></head><body><xmp is="ms-nav" :widget="{ active: 0 }"></xmp><xmp is="ms-carousel"></xmp><xmp is="ms-search"></xmp><xmp is="ms-marquee"></xmp><xmp is="ms-qrcode"></xmp><div class="wrap ms-controller" ms-controller="index"><div class="inner"><div class="index-hot"><table><thead><tr class="index-hotTitle"><td colspan="3">热门问题</td></tr></thead><tbody><tr class="index-hotItem" :for="(trKey, tr) in @hotList.slice(0, Math.min(Math.ceil(@hotList.length / 3), 3) )"><td :for="(tdKey, item) in @hotList.slice(trKey * 3, trKey * 3 + 3 )" style="width:33.3333%"><a :attr="{ href: '/pc/issue-detail?id=' + @item.id }">{{ @item.title }}</a></td></tr></tbody></table></div><div class="index-issue" id="category"><div class="index-issueTitle">常见问题</div><div class="index-issueList clear"><div class="index-issueItemWrap" :for="item in @issueList"><a class="index-issueItem" :click="@goIssueList(item)"><div class="index-issueIcon" :css="{backgroundImage: 'url(' + @item.icon + ')'}"></div><div class="index-issueText">{{ @item.name }}</div></a></div></div></div><div class="index-service clear"><div class="index-serviceItemWrap"><div class="index-serviceItem clear disabled"><div class="index-serviceIcon icon-selfhelp"></div><div class="index-serviceTitle">自主服务申请</div><div class="index-serviceText">无需排队等，轻松快速办理业务</div></div></div><div class="index-serviceItemWrap last"><a class="index-serviceItem clear" href="/pc/select-issue"><div class="index-serviceIcon icon-online"></div><div class="index-serviceTitle">在线问题反馈</div><div class="index-serviceText">人工客服解答，享受专业客服服务</div></a></div></div></div></div><xmp is="ms-footer"></xmp></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="keywords" content=" ">
+<meta name="description" content=" ">
+<title>凯撒游戏客服中心</title>
+<!--<link rel="dns-prefetch" href="http://cdn.ksgame.com">-->
+<!--<link rel="dns-prefetch" href="http://kfcdn.ksgame.com">-->
+<link rel="icon" type="image/ico" href="../dist/img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico">
+
+<link rel="stylesheet" href="../dist/lib/layui/css/layui.css?rev=@@hash">
+<link rel="stylesheet" href="../dist/css/main.css?rev=@@hash">
+
+<script type="text/javascript" src="../dist/lib/avalon/avalon.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/lib/jquery/jquery.min.js?rev=@hash"></script>
+<!--<script type="text/javascript" src="http://cdn.staticfile.org/webuploader/0.1.5/webuploader.js"></script>-->
+<script type="text/javascript" src="../dist/lib/webuploader/webuploader.min.js?rev=@hash"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../dist/lib/polyfill/es5-shim.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/lib/polyfill/es5-sham.js?rev=@hash"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script type="text/javascript" src="../dist/lib/placeholders/placeholders.jquery.min.js?rev=@@hash"></script>
+<![endif]-->
+<script type="text/javascript" src="../dist/lib/layui/layui.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/js/component.js?rev=@@hash"></script>
+
+<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+<script type="text/javascript" src="../dist/js/index.js?rev=@@hash"></script>
+</head>
+<body>
+
+    <xmp is="ms-nav" :widget="{ active: 0 }"></xmp>
+    <xmp is="ms-carousel"></xmp>
+    <xmp is="ms-search"></xmp>
+    <xmp is="ms-marquee"></xmp>
+    <xmp is="ms-qrcode"></xmp>
+
+    <div class="wrap ms-controller" ms-controller="index">
+        <div class="inner">
+
+            <div class="index-hot">
+                <table>
+                    <thead>
+                        <tr class="index-hotTitle"><td colspan="3">热门问题</td></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="index-hotItem" :for="(trKey, tr) in @hotList.slice(0, Math.min(Math.ceil(@hotList.length / 3), 3) )">
+                            <td :for="(tdKey, item) in @hotList.slice(trKey * 3, trKey * 3 + 3 )" style="width: 33.3333%"><a :attr="{ href: '/pc/issue-detail?id=' + @item.id }">{{ @item.title }}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="index-issue" id="category">
+                <div class="index-issueTitle">常见问题</div>
+                <div class="index-issueList clear">
+                    <div class="index-issueItemWrap" :for="item in @issueList">
+                        <a class="index-issueItem" :click="@goIssueList(item)">
+                            <div class="index-issueIcon" :css="{backgroundImage: 'url(' + @item.icon + ')'}"></div>
+                            <div class="index-issueText">{{ @item.name }}</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="index-service clear">
+                <div class="index-serviceItemWrap">
+                    <div class="index-serviceItem clear disabled">
+                        <div class="index-serviceIcon icon-selfhelp"></div>
+                        <div class="index-serviceTitle">自主服务申请</div>
+                        <div class="index-serviceText">无需排队等，轻松快速办理业务</div>
+                    </div>
+                </div>
+                <div class="index-serviceItemWrap last">
+                    <a class="index-serviceItem clear" href="/pc/select-issue">
+                        <div class="index-serviceIcon icon-online"></div>
+                        <div class="index-serviceTitle">在线问题反馈</div>
+                        <div class="index-serviceText">人工客服解答，享受专业客服服务</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <xmp is="ms-footer"></xmp>
+
+</body>
+</html>

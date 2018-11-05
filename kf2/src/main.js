@@ -43,7 +43,7 @@ if (util.isWeiXin()) {
 }
 //自定义本地测试数据-roleId:745193055671-如果在手游进入，sdk会调用js来localStorage存储user
 if (process.env.NODE_ENV !== 'production') {
-    util.setLocalData('user', '{"appId":"100000026", "openid": "od55V0YqDyFFb_BRuoSkKVGtrRdk","sdkUserId": "152212943421514350", "channelId":"100000","roleName":"%e5%91%a8%e8%89%ba%e5%86%a0","roleId":"zhou","serverId":"12345","serverName":"%e5%91%a8%e8%89%ba%e5%86%a0"}')
+    util.setLocalData('user', '{"appId":"100000017", "openid": "od55V0YqDyFFb_BRuoSkKVGtrRdk","sdkUserId": "152212943421514350", "channelId":"100000","roleName":"%e5%91%a8%e8%89%ba%e5%86%a0","roleId":"zhou","serverId":"12345","serverName":"%e5%91%a8%e8%89%ba%e5%86%a0"}')
 }
 
 

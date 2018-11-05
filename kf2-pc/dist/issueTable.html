@@ -1,6 +1,84 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,user-scalable=no"><meta name="keywords" content=" "><meta name="description" content=" "><title>凯撒游戏客服中心</title><link rel="icon" type="image/ico" href="/static/dist-pc/img/favicon.ico"><link rel="shortcut icon" type="image/x-icon" href="/static/dist-pc/img/favicon.ico"><link rel="stylesheet" href="/static/dist-pc/lib/layui/css/layui.css?rev=754f62d59699ebe22dbfd023c7eab00e"><link rel="stylesheet" href="/static/dist-pc/css/main.css?rev=a8072a34430d9c2316202f6b6beed7e3"><script type="text/javascript" src="/static/dist-pc/lib/avalon/avalon.js?rev=aba60523ada7be083d11f3f7ad010bec"></script><script type="text/javascript" src="/static/dist-pc/lib/jquery/jquery.min.js?rev=4f252523d4af0b478c810c2547a63e19"></script><script type="text/javascript" src="/static/dist-pc/lib/webuploader/webuploader.min.js?rev=5f84bea2033b6fcdd63f456f953f121a"></script><!--[if lt IE 9]>
-<script type="text/javascript" src="/static/dist-pc/lib/polyfill/es5-shim.js?rev=54d756fb527d24cba82ed3fbce94a014"></script>
-<script type="text/javascript" src="/static/dist-pc/lib/polyfill/es5-sham.js?rev=02be501c30772d8a280f74194165758e"></script>
-<![endif]--><!--[if lt IE 10]>
-<script type="text/javascript" src="/static/dist-pc/lib/placeholders/placeholders.jquery.min.js?rev=a174a677ef7798a1adbda44b740996f5"></script>
-<![endif]--><script type="text/javascript" src="/static/dist-pc/lib/layui/layui.js?rev=1cc5848ec75da1feb2ae0fea0834f693"></script><script type="text/javascript" src="/static/dist-pc/js/component.js?rev=de9c064cc51d5e62153c05f32ac2901b"></script><script type="text/javascript" src="/static/dist-pc/js/issueTable.js?rev=189932dc51b7c53f0a0d789fd5b2dd91"></script></head><body><xmp is="ms-nav" :widget="{ active: 4 }"></xmp><xmp is="ms-carousel"></xmp><xmp is="ms-search"></xmp><xmp is="ms-marquee"></xmp><xmp is="ms-qrcode"></xmp><div class="ms-controller" ms-controller="issueTable"><div class="my-issue-table inner"><div class="bread-crumbs">当前位置：<a href="/pc/bind-role-done">个人中心</a> &gt; 我的提单</div><div><table class="innerTable layui-table u-fs14" lay-skin="line"><thead><tr><th ms-for="item in tableData.headList">{{item}}</th></tr></thead><tbody><tr ms-for="item in newDataList"><td>{{item.app_name}}</td><td>{{item.id}}</td><td><div class="problemDetails"><a :attr="{href:'/pc/my-issue?id='+ item.id}">{{item.desc}}</a></div></td><td><a class="main-color" :if="(item.reply_status == 0)" :attr="{href:'/pc/my-issue?id='+ item.id}">未答复</a> <a :if="(item.reply_status == 1)" :attr="{href:'/pc/my-issue?id='+ item.id}">已答复</a></td><td>{{item.time * 1000 | date('yyyy.MM.dd HH:mm:ss') }}</td><td><span :if="item.lastReplyTime">{{ item.lastReplyTime * 1000 | date('yyyy.MM.dd HH:mm:ss') }}</span><span :if="!item.lastReplyTime">/</span></td><td><div :if="(item.reply_status == 0)">/</div><div :if="(item.reply_status == 1)"><a class="main-color" :attr="{href:'/pc/evaluate?id='+ item.id + '&role_id=' + item.role_id + '&appId=' + item.appId }" :if="(item.evaluation == 0)">未评价</a> <a :attr="{href:'/pc/my-issue?id='+ item.id}" :if="(item.evaluation == 1)">已评价</a></div></td></tr></tbody></table></div><xmp is="ms-paging" :widget="{count:@count,jump:@jump,limit:@limit}"></xmp></div></div><xmp is="ms-footer"></xmp></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="keywords" content=" ">
+<meta name="description" content=" ">
+<title>凯撒游戏客服中心</title>
+<!--<link rel="dns-prefetch" href="http://cdn.ksgame.com">-->
+<!--<link rel="dns-prefetch" href="http://kfcdn.ksgame.com">-->
+<link rel="icon" type="image/ico" href="../dist/img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico">
+
+<link rel="stylesheet" href="../dist/lib/layui/css/layui.css?rev=@@hash">
+<link rel="stylesheet" href="../dist/css/main.css?rev=@@hash">
+
+<script type="text/javascript" src="../dist/lib/avalon/avalon.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/lib/jquery/jquery.min.js?rev=@hash"></script>
+<!--<script type="text/javascript" src="http://cdn.staticfile.org/webuploader/0.1.5/webuploader.js"></script>-->
+<script type="text/javascript" src="../dist/lib/webuploader/webuploader.min.js?rev=@hash"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../dist/lib/polyfill/es5-shim.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/lib/polyfill/es5-sham.js?rev=@hash"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script type="text/javascript" src="../dist/lib/placeholders/placeholders.jquery.min.js?rev=@@hash"></script>
+<![endif]-->
+<script type="text/javascript" src="../dist/lib/layui/layui.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/js/component.js?rev=@@hash"></script>
+
+<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+    <script type="text/javascript" src="../dist/js/issueTable.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="ms-controller" ms-controller="issueTable">
+    <div class="my-issue-table inner">
+        <div class="bread-crumbs">当前位置：<a href="/pc/bind-role-done">个人中心</a> &gt; 我的提单</div>
+        <div  class="">
+            <table class="innerTable layui-table  u-fs14" lay-skin="line">
+                <thead>
+                <tr>
+                    <th ms-for="item in tableData.headList" >{{item}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ms-for="item in newDataList">
+                    <td>{{item.app_name}}</td>
+                    <td>{{item.id}}</td>
+                    <td class=""><div class="problemDetails"><a class="" :attr="{href:'/pc/my-issue?id='+ item.id}">{{item.desc}}</a></div></td>
+                    <td>
+                        <a class="main-color" :if="(item.reply_status == 0)" :attr="{href:'/pc/my-issue?id='+ item.id}">未答复</a>
+                        <a :if="(item.reply_status == 1)" :attr="{href:'/pc/my-issue?id='+ item.id}">已答复</a>
+                    </td>
+                    <td>{{item.time * 1000 | date('yyyy.MM.dd HH:mm:ss') }}</td>
+                    <td><span :if="item.lastReplyTime">{{ item.lastReplyTime * 1000 | date('yyyy.MM.dd HH:mm:ss') }}</span><span :if="!item.lastReplyTime">/</span></td>
+                    <td>
+                        <div :if="(item.reply_status == 0)">/</div>
+                        <div :if="(item.reply_status == 1)">
+                            <a class="main-color" :attr="{href:'/pc/evaluate?id='+ item.id + '&role_id=' + item.role_id + '&appId=' + item.appId }" :if="(item.evaluation == 0)">未评价</a>
+                            <a :attr="{href:'/pc/my-issue?id='+ item.id}" :if="(item.evaluation == 1)">已评价</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <xmp is="ms-paging" :widget="{count:@count,jump:@jump,limit:@limit}"></xmp>
+    </div>
+</div>
+
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

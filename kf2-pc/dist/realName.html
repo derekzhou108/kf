@@ -1,6 +1,131 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="renderer" content="webkit"><meta name="viewport" content="width=device-width,user-scalable=no"><meta name="keywords" content=" "><meta name="description" content=" "><title>凯撒游戏客服中心</title><link rel="icon" type="image/ico" href="/static/dist-pc/img/favicon.ico"><link rel="shortcut icon" type="image/x-icon" href="/static/dist-pc/img/favicon.ico"><link rel="stylesheet" href="/static/dist-pc/lib/layui/css/layui.css?rev=754f62d59699ebe22dbfd023c7eab00e"><link rel="stylesheet" href="/static/dist-pc/css/main.css?rev=a8072a34430d9c2316202f6b6beed7e3"><script type="text/javascript" src="/static/dist-pc/lib/avalon/avalon.js?rev=aba60523ada7be083d11f3f7ad010bec"></script><script type="text/javascript" src="/static/dist-pc/lib/jquery/jquery.min.js?rev=4f252523d4af0b478c810c2547a63e19"></script><script type="text/javascript" src="/static/dist-pc/lib/webuploader/webuploader.min.js?rev=5f84bea2033b6fcdd63f456f953f121a"></script><!--[if lt IE 9]>
-<script type="text/javascript" src="/static/dist-pc/lib/polyfill/es5-shim.js?rev=54d756fb527d24cba82ed3fbce94a014"></script>
-<script type="text/javascript" src="/static/dist-pc/lib/polyfill/es5-sham.js?rev=02be501c30772d8a280f74194165758e"></script>
-<![endif]--><!--[if lt IE 10]>
-<script type="text/javascript" src="/static/dist-pc/lib/placeholders/placeholders.jquery.min.js?rev=a174a677ef7798a1adbda44b740996f5"></script>
-<![endif]--><script type="text/javascript" src="/static/dist-pc/lib/layui/layui.js?rev=1cc5848ec75da1feb2ae0fea0834f693"></script><script type="text/javascript" src="/static/dist-pc/js/component.js?rev=de9c064cc51d5e62153c05f32ac2901b"></script><script type="text/javascript" src="/static/dist-pc/js/realName.js?rev=6398ffc8cc3cd0562ca7aa506d34670c"></script></head><body><xmp is="ms-nav" :widget="{ active: 4 }"></xmp><xmp is="ms-carousel"></xmp><xmp is="ms-search"></xmp><xmp is="ms-marquee"></xmp><xmp is="ms-qrcode"></xmp><div class="wrap ms-controller service realName" ms-controller="realName"><div class="inner"><div class="main searchResult"><div class="crumbs">当前位置：<a class="crumbName" ms-attr="{href: @crumbPath}">个人中心</a> &gt; <span class="currentModule">{{currentModule}}</span></div><div class="subModuleContent"><div :if="realNameInfo.step ==1"><div class="label"><icon class="icon-form-title ms-inBlack"></icon><span>证件绑定</span></div><div class="form-main"><div class="form-inputItem clear" :class="{error:@error.loginPW}"><div class="form-label">登录密码：</div><div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.loginPW" :blur="@error.loginPW=false"></div><div class="form-error"><span class="icon-warn"></span>登录密码不能为空！</div></div><div class="form-btns"><button class="form-btn cancel" :click="cancel()">取消</button> <button class="form-btn submit" :click="nextStep()">验证密码</button></div></div></div><div :if="realNameInfo.step==2"><section class="safetyIndex"><div class="label"><icon class="icon-form-title ms-inBlack"></icon><span>证件绑定</span></div><div class="form-main"><div class="u-fc-888 clear desc"><span class="icon-warnBig ms-inBlack"></span>身份证作为判断帐号归属方和防沉迷的凭证，请真实填写，一旦设置<span class="static-warn">不可修改</span>！</div><div class="form-inputItem clear" :class="{error:@error.identityNum}"><div class="form-label">身份证号：</div><div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.identityNum" :blur="@error.identityNum=false"></div><div class="form-error"><span class="icon-warn"></span>{{@realNameInfo.identityErrorText}}</div></div><div class="form-inputItem clear" :class="{error:@error.identityNumAgain}"><div class="form-label">确认身份证号：</div><div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.identityNumAgain" :blur="@error.identityNumAgain=false"></div><div class="form-error"><span class="icon-warn"></span>{{@realNameInfo.identityErrorText}}</div></div><div class="form-inputItem clear" :class="{error:@error.realName}"><div class="form-label">真实姓名：</div><div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.realName" :blur="@error.realName=false"></div><div class="form-error"><span class="icon-warn"></span>姓名不能为空！</div></div><div class="form-btns"><button class="form-btn form-btnMagin submit u-ml65" :click="nextStep()">下一步</button></div></div></section><div class="isline"></div><section class="realNameDesc"><div class="form-main"><div class="descText">没有绝对的安全，只有养成良好的安全习惯，才能尽可能的保护帐号不会丢失。</div><div><h3 class="title">如何养成良好的安全习惯：</h3><ul class="u-fc-888 desc-step"><li>1. 安装知名杀毒软件，并保持及时更新。</li><li>2. 不安装来历不明的软件或控件。</li><li>3. 经常更换密码，且保存密码的安全强度。</li><li>4. 帐号只可自己使用，不给与他人使用，不告诉他人密码。</li><li>5. 密保资料妥善保管，不泄露给他人。</li></ul></div></div></section></div><div :if="realNameInfo.step==3" class="progress-warp"><div class="icon-bind-success margin-center"></div><div class="u-tc success-desc"><p>绑定身份证成功！</p><p>您绑定的身份证号为：{{@realNameInfo.identityNum}}</p></div><div class="progress-btn"><button class="form-btn form-btnMagin submit" :click="cancel">完成</button></div></div></div></div></div></div><xmp is="ms-footer"></xmp></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="keywords" content=" ">
+<meta name="description" content=" ">
+<title>凯撒游戏客服中心</title>
+<!--<link rel="dns-prefetch" href="http://cdn.ksgame.com">-->
+<!--<link rel="dns-prefetch" href="http://kfcdn.ksgame.com">-->
+<link rel="icon" type="image/ico" href="../dist/img/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="../dist/img/favicon.ico">
+
+<link rel="stylesheet" href="../dist/lib/layui/css/layui.css?rev=@@hash">
+<link rel="stylesheet" href="../dist/css/main.css?rev=@@hash">
+
+<script type="text/javascript" src="../dist/lib/avalon/avalon.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/lib/jquery/jquery.min.js?rev=@hash"></script>
+<!--<script type="text/javascript" src="http://cdn.staticfile.org/webuploader/0.1.5/webuploader.js"></script>-->
+<script type="text/javascript" src="../dist/lib/webuploader/webuploader.min.js?rev=@hash"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../dist/lib/polyfill/es5-shim.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/lib/polyfill/es5-sham.js?rev=@hash"></script>
+<![endif]-->
+<!--[if lt IE 10]>
+<script type="text/javascript" src="../dist/lib/placeholders/placeholders.jquery.min.js?rev=@@hash"></script>
+<![endif]-->
+<script type="text/javascript" src="../dist/lib/layui/layui.js?rev=@hash"></script>
+<script type="text/javascript" src="../dist/js/component.js?rev=@@hash"></script>
+
+<!--<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>-->
+    <script type="text/javascript" src="../dist/js/realName.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="wrap ms-controller service realName" ms-controller="realName">
+    <div class="inner">
+        <div class="main searchResult">
+            <div class="crumbs">当前位置：<a class="crumbName" ms-attr="{href: @crumbPath}">个人中心</a> &gt; <span class="currentModule">{{currentModule}}</span> </div>
+            <div class="subModuleContent">
+                <div :if="realNameInfo.step ==1">
+                    <div class="label"><icon class="icon-form-title ms-inBlack"></icon><span>证件绑定</span></div>
+                    <div class="form-main">
+                            <div class="form-inputItem clear" :class="{error:@error.loginPW}">
+                                    <div class="form-label">登录密码：</div>
+                                    <div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.loginPW" :blur="@error.loginPW=false"></div>
+                                    <div class="form-error"><span class="icon-warn"></span>登录密码不能为空！</div>
+                            </div>
+                            <div class="form-btns">
+                                <button class="form-btn cancel" :click="cancel()">取消</button>
+                                <button class="form-btn submit" :click="nextStep()">验证密码</button>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="" :if="realNameInfo.step==2">
+                    <!-- 安全指数 -->
+                    <section class="safetyIndex">
+                            <div class="label"><icon class="icon-form-title ms-inBlack"></icon><span>证件绑定</span></div>
+                            <div class="form-main">
+                                <div class="u-fc-888 clear desc"><span class="icon-warnBig ms-inBlack"></span>身份证作为判断帐号归属方和防沉迷的凭证，请真实填写，一旦设置<span class="static-warn">不可修改</span>！</div>
+                                    <div class="form-inputItem clear" :class="{error:@error.identityNum}">
+                                            <div class="form-label">身份证号：</div>
+                                            <div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.identityNum" :blur="@error.identityNum=false"></div>
+                                            <div class="form-error"><span class="icon-warn"></span>{{@realNameInfo.identityErrorText}}</div>
+                                    </div>
+                                    <div class="form-inputItem clear" :class="{error:@error.identityNumAgain}">
+                                            <div class="form-label">确认身份证号：</div>
+                                            <div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.identityNumAgain" :blur="@error.identityNumAgain=false"></div>
+                                            <div class="form-error"><span class="icon-warn"></span>{{@realNameInfo.identityErrorText}}</div>
+                                    </div>
+                                    <div class="form-inputItem clear" :class="{error:@error.realName}">
+                                            <div class="form-label">真实姓名：</div>
+                                            <div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.realName" :blur="@error.realName=false"></div>
+                                            <div class="form-error"><span class="icon-warn"></span>姓名不能为空！</div>
+                                    </div>
+                                    <div class="form-btns">
+                                        <button class="form-btn form-btnMagin submit u-ml65" :click="nextStep()">下一步</button>
+                                    </div>
+                            </div>
+                        </section>
+                        <div class="isline"></div>
+                        <!-- 描叙信息 -->
+                        <section class="realNameDesc">
+                            <div class="form-main">
+                                <div class="descText">没有绝对的安全，只有养成良好的安全习惯，才能尽可能的保护帐号不会丢失。</div>
+                                <div>
+                                    <h3 class="title">如何养成良好的安全习惯：</h3>
+                                    <ul class="u-fc-888 desc-step">
+                                        <li>1. 安装知名杀毒软件，并保持及时更新。</li>
+                                        <li>2. 不安装来历不明的软件或控件。</li>
+                                        <li>3. 经常更换密码，且保存密码的安全强度。</li>
+                                        <li>4. 帐号只可自己使用，不给与他人使用，不告诉他人密码。</li>
+                                        <li>5. 密保资料妥善保管，不泄露给他人。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                </div>
+                <div :if="realNameInfo.step==3" class="progress-warp">
+                        <div class="icon-bind-success margin-center"></div>
+                        <div class="u-tc success-desc">
+                            <p>绑定身份证成功！</p>
+                            <p>您绑定的身份证号为：{{@realNameInfo.identityNum}}</p>
+                        </div>
+                        <div class="progress-btn">
+                                <button class="form-btn form-btnMagin submit" :click="cancel">完成</button>
+                        </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>
