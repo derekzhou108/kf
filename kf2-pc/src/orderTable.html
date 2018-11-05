@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/orderTable.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="ms-controller" ms-controller="orderTable">
+    <div class="my-order-table inner">
+        <div class="bread">
+            <span class="layui-breadcrumb"><a href="/pc/index">首页</a></span>
+        </div>
+        <div style="margin: 20px">
+            <table class="layui-table  u-fs14" lay-skin="line">
+                <thead>
+                <tr>
+                    <th ms-for="item in tableData.headList" >{{item}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ms-for="item in tableData.tableList">
+                    <td>{{item.gameName}}</td>
+                    <td>{{item.orderNum}}</td>
+                    <td>{{item.problemDetails}}</td>
+                    <td><span class="main-color" ms-if="(item.replyState == 0)">未答复</span><span ms-if="(item.replyState == 1)">已答复</span></td>
+                    <td>{{item.createTime}}</td><td>{{item.replyTime}}</td><td><span class="main-color" ms-if="(item.replyState == 0)">未评价</span><span ms-if="(item.replyState == 1)">已评价</span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/bindRole.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="wrap ms-controller" ms-controller="bindRole">
+    <div class="inner">
+        <div class="main bindRole">
+            <div class="crumbs">当前位置：<a href="/pc/bind-role-done">个人中心</a> &gt; 绑定角色</div>
+            <div class="form-title"><span class="icon-form-title"></span>绑定新角色</div>
+            <div class="form-main">
+                <div class="layui-form">
+                    <div class="form-inputItem clear">
+                        <div class="form-label">请选择游戏：</div>
+                        <div class="form-inputWrap input_select">
+                            <xmp is="ms-select" :widget="{data: @fillServerList, key: 'pId', cbSelect: @cbSelect }"></xmp>
+                        </div>
+                        <!--<div class="form-error"><span class="icon-warn"></span>1212</div>-->
+                    </div>
+                    <div class="form-inputItem clear">
+                        <div class="form-label">请选择操作系统：</div>
+                        <div class="form-inputWrap input_select">
+                            <xmp is="ms-select" :widget="{data: @systemList, key: 'system', cbSelect: @cbSelect }"></xmp>
+                        </div>
+                    </div>
+                    <div class="form-inputItem clear" :visible="system === 2">
+                        <div class="form-label">游戏帐号所属平台：</div>
+                        <div class="form-inputWrap input_select">
+                            <xmp is="ms-select" :widget="{data: @platformList, key: 'platform', cbSelect: @cbSelect }"></xmp>
+                        </div>
+                        <div class="form-text"><a class="form-link" :click="@openGuide">如何查看游戏帐号所属平台</a></div>
+                    </div>
+                    <div class="form-btns">
+                        <button class="form-btn" onclick="util.back()">返回</button>
+                        <button class="form-btn submit" :attr="{disabled : (@pId == 0) || (@system == 0) || (@system == 2 && @platform == 0 ) }" :click="@next">下一步</button>
+                    </div>
+                    <div style="display: none">{{pId}} - {{system}} - {{platform}}</div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+    "code":10000,
+    "data":{
+        "userid": "1500431298832495770",
+        "user_name": "13715292643",
+        "is_guest": "0",
+        "phone": "13715292643",
+        "last_login_time": "1521704710",
+        "head_img":"http://sxcdn.ksgame.com/group1/M00/01/01/CmnEGVqwam2AfYuQAAvqH_kipG8770.jpg", 
+        "account":"laikexing", 
+        "nickname":"小明", 
+        "gender":"1", 
+        "birthday":"1520467200",
+        "qq":"123456789", 
+        "education":"本科", 
+        "trade":"计算机", 
+        "income":"1000", 
+        "province":"广东省", 
+        "city":"深圳市", 
+        "gameList":[
+            {
+                "icon":"http://sxcdn.ksgame.com/group1/M00/01/01/CmnEGVqwam2AfYuQAAvqH_kipG8770.jpg", 
+                "game_name":"葫芦娃救爷爷" 
+            },
+            {
+                "icon":"http://sxcdn.ksgame.com/group1/M00/01/01/CmnEGVqwam2AfYuQAAvqH_kipG8770.jpg", 
+                "game_name":"银之守墓人" 
+            },
+            {
+                "icon":"http://sxcdn.ksgame.com/group1/M00/01/01/CmnEGVqwam2AfYuQAAvqH_kipG8770.jpg", 
+                "game_name":"三国志" 
+            },
+            {
+                "icon":"http://sxcdn.ksgame.com/group1/M00/01/01/CmnEGVqwam2AfYuQAAvqH_kipG8770.jpg", 
+                "game_name":"锦绣未央" 
+            },
+            {
+                "icon":"http://sxcdn.ksgame.com/group1/M00/01/01/CmnEGVqwam2AfYuQAAvqH_kipG8770.jpg", 
+                "game_name":"玄界之门" 
+            }
+        ]
+},
+        "msg":""
+}

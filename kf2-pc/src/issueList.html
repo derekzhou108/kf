@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/issueList.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 1 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="wrap ms-controller" ms-controller="issueList">
+    <div class="inner">
+        <div class="main searchResult">
+            <div class="crumbs">当前位置：<a href="/pc/index">首页</a> &gt; <span :visible="search !== 'undefined' ">搜索结果</span> <span :visible="id !== 'undefined' ">{{ text }}</span> </div>
+            <div class="searchResult-list">
+
+                <a class="searchResult-item" :attr="{href: '/pc/issue-detail?id=' + @item.id}" :for="item in @list">
+                    <div class="searchResult-title">{{ @item.title }}</div>
+                    <div class="searchResult-text" :html="@item.intro"></div>
+                </a>
+
+            </div>
+
+            <xmp is="ms-paging" :widget="{ count: @count, jump: @jump }"></xmp>
+
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

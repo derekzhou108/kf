@@ -1,0 +1,1 @@
+"use strict";var selectIssueVm=avalon.define({$id:"selectIssue",isLogin:util.getStorage("userInfo")||!1,goIssue:function(o){this.isLogin?util.getStorage("role")?window.location.href="/pc/issue?type="+o:dialog.confirm("请先选择角色",function(){window.location.href="/pc/bind-role-done?to="+o}):account.login()}});

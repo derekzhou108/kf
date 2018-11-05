@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/realName.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="wrap ms-controller service realName" ms-controller="realName">
+    <div class="inner">
+        <div class="main searchResult">
+            <div class="crumbs">当前位置：<a class="crumbName" ms-attr="{href: @crumbPath}">个人中心</a> &gt; <span class="currentModule">{{currentModule}}</span> </div>
+            <div class="subModuleContent">
+                <div :if="realNameInfo.step ==1">
+                    <div class="label"><icon class="icon-form-title ms-inBlack"></icon><span>证件绑定</span></div>
+                    <div class="form-main">
+                            <div class="form-inputItem clear" :class="{error:@error.loginPW}">
+                                    <div class="form-label">登录密码：</div>
+                                    <div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.loginPW" :blur="@error.loginPW=false"></div>
+                                    <div class="form-error"><span class="icon-warn"></span>登录密码不能为空！</div>
+                            </div>
+                            <div class="form-btns">
+                                <button class="form-btn cancel" :click="cancel()">取消</button>
+                                <button class="form-btn submit" :click="nextStep()">验证密码</button>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="" :if="realNameInfo.step==2">
+                    <!-- 安全指数 -->
+                    <section class="safetyIndex">
+                            <div class="label"><icon class="icon-form-title ms-inBlack"></icon><span>证件绑定</span></div>
+                            <div class="form-main">
+                                <div class="u-fc-888 clear desc"><span class="icon-warnBig ms-inBlack"></span>身份证作为判断帐号归属方和防沉迷的凭证，请真实填写，一旦设置<span class="static-warn">不可修改</span>！</div>
+                                    <div class="form-inputItem clear" :class="{error:@error.identityNum}">
+                                            <div class="form-label">身份证号：</div>
+                                            <div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.identityNum" :blur="@error.identityNum=false"></div>
+                                            <div class="form-error"><span class="icon-warn"></span>{{@realNameInfo.identityErrorText}}</div>
+                                    </div>
+                                    <div class="form-inputItem clear" :class="{error:@error.identityNumAgain}">
+                                            <div class="form-label">确认身份证号：</div>
+                                            <div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.identityNumAgain" :blur="@error.identityNumAgain=false"></div>
+                                            <div class="form-error"><span class="icon-warn"></span>{{@realNameInfo.identityErrorText}}</div>
+                                    </div>
+                                    <div class="form-inputItem clear" :class="{error:@error.realName}">
+                                            <div class="form-label">真实姓名：</div>
+                                            <div class="form-inputWrap-def"><input class="form-input" type="text" :duplex="@realNameInfo.realName" :blur="@error.realName=false"></div>
+                                            <div class="form-error"><span class="icon-warn"></span>姓名不能为空！</div>
+                                    </div>
+                                    <div class="form-btns">
+                                        <button class="form-btn form-btnMagin submit u-ml65" :click="nextStep()">下一步</button>
+                                    </div>
+                            </div>
+                        </section>
+                        <div class="isline"></div>
+                        <!-- 描叙信息 -->
+                        <section class="realNameDesc">
+                            <div class="form-main">
+                                <div class="descText">没有绝对的安全，只有养成良好的安全习惯，才能尽可能的保护帐号不会丢失。</div>
+                                <div>
+                                    <h3 class="title">如何养成良好的安全习惯：</h3>
+                                    <ul class="u-fc-888 desc-step">
+                                        <li>1. 安装知名杀毒软件，并保持及时更新。</li>
+                                        <li>2. 不安装来历不明的软件或控件。</li>
+                                        <li>3. 经常更换密码，且保存密码的安全强度。</li>
+                                        <li>4. 帐号只可自己使用，不给与他人使用，不告诉他人密码。</li>
+                                        <li>5. 密保资料妥善保管，不泄露给他人。</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                </div>
+                <div :if="realNameInfo.step==3" class="progress-warp">
+                        <div class="icon-bind-success margin-center"></div>
+                        <div class="u-tc success-desc">
+                            <p>绑定身份证成功！</p>
+                            <p>您绑定的身份证号为：{{@realNameInfo.identityNum}}</p>
+                        </div>
+                        <div class="progress-btn">
+                                <button class="form-btn form-btnMagin submit" :click="cancel">完成</button>
+                        </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

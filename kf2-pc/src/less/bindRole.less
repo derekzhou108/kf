@@ -1,0 +1,71 @@
+.bindRole{
+  &-btns{
+    text-align: center;
+    margin-top: 45px;
+  }
+}
+.role{
+  &-wrap{
+    width: 22%;
+    float: left;
+    margin:25px 0 0 3%;
+  }
+  &-item{
+    cursor: pointer;
+    padding: 5px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all .3s ease-out;
+    &:hover, &.active{
+      background-color: #ff6d01;
+      background-image: linear-gradient(to left,  #ffba00, #ff6d01);
+      .role-name, .role-text{
+        color: #fff;
+      }
+    }
+  }
+  &-icon{
+    float: left;
+    width: 40px;
+    height:40px;
+    margin-right: 10px;
+    background-size: 100% 100%;
+  }
+  &-name{
+    float: left;
+    width: 160px;
+    line-height: 20px;
+  }
+  &-text{
+    float: left;
+    color:#555;
+    width: 160px;
+    line-height: 20px;
+    white-space: nowrap;
+  }
+  &-new{
+    border:1px dashed #f76c35;
+    border-radius: 5px;
+    width: 18%;
+    height: 50px;
+    margin: 25px 0 0 3%;
+    float: left;
+    color:#f76c35;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  &-newIcon{
+    float: left;
+    margin:12px 12px 0 23px;
+  }
+  &-newText{
+    float: left;
+    margin-top: 12px;
+  }
+}
+.bindRoleDone-btns{
+  .form-btn{
+      margin:0 40px 40px 40px;
+  }
+}

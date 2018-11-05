@@ -1,0 +1,391 @@
+.service{
+    .main{
+        min-height: 488px;
+    }
+    .form-inputWrap{
+        width: 200px;
+    }
+    // .form-inputItem{
+    //     margin-bottom: 5px;
+    // }
+    .form-desc{
+        color: #555555;
+        p{margin-bottom: 4px;}
+    }
+    .form-leftItem{
+        margin-left: 155px;
+        margin-bottom: 20px;
+    }
+    .icon-form-title{
+        position: relative;
+        top: -1px;
+        margin-right: 5px;
+    }
+    .btn-search{
+        width: 80px;
+    }
+    .crumbs{
+        margin-bottom: 14px;
+    }
+    .verificationCode{
+        width: 100px;
+        height: 34px;
+        display: inline-block;
+        background: #a5a5a5;
+        color: #ffffff;
+        font-size: 21px;
+        text-align: center;
+        line-height: 34px;
+    }
+    .verificationDesc{
+        color: #6093df;
+        margin-left: 12px;
+        cursor: pointer;
+    }
+    .tab-nav{
+        width:1068px;
+        margin-top: 14px;
+        margin: 0 auto; 
+        background: #f5f5f5;
+        height: 38px;
+        border-radius: 4px;
+        line-height: 38px;
+        .item{
+            // width: 62px;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            margin: 0 20px 0 6px;
+            padding: 0 20px;
+            height: 23px;
+            line-height: 23px;
+            color: #555555;
+            &.active,&:hover{
+                background: #f76f3a;
+                color: #ffffff;
+                border-radius: 12px;
+            }
+        }
+    }
+    .tab-content{
+        .firstPart{
+            border-bottom: 1px dashed #d4d4d4;
+        }
+        li{
+            cursor: pointer;
+            display: inline-block;
+            margin: 40px 45px 40px 45px;
+            width: 85px;
+            color: #333333;
+            text-align: center;
+            .icon{
+                margin-bottom: 6px;
+                display: inline-block
+            }
+            &.active,&:hover{
+                color: #f76f3a;
+                .icon-bindPhone{
+                    background: url('../img/bindPhoneActive.png') no-repeat;
+                }
+                .icon-unbindPhone{
+                    background: url('../img/unbindPhoneActive.png') no-repeat;
+                }
+                .icon-bindEmail{
+                    background: url('../img/bindEmailActive.png') no-repeat;
+                }
+                .icon-unbindEmail{
+                    background: url('../img/unbindEmailActive.png') no-repeat;
+                }
+                .icon-findPw{
+                    background: url('../img/findPwActive.png') no-repeat;
+                }
+                .icon-changePw{
+                    background: url('../img/changePwActive.png') no-repeat;
+                }
+                .icon-findAccount{
+                    background: url('../img/findAccountActive.png') no-repeat;
+                }
+                .icon-accountInfo{
+                    background: url('../img/accountInfoActive.png') no-repeat;
+                }
+                .icon-rechargeDetail{
+                    background: url('../img/rechargeDetailActive.png') no-repeat;
+                }
+                .icon-allRole{
+                    background: url('../img/allRoleActive.png') no-repeat;
+                }
+                .icon-channelAccount{
+                    background: url('../img/channelAccountActive.png') no-repeat;
+                }
+            }
+        }
+    }
+    .subModuleContent{
+        .bindPhone{
+            .btn-bind{
+                margin-top: 37px;
+                margin-bottom: 198px;
+            }
+        }
+    }
+    .findAccount{
+        .findAccountDesc{
+            margin-left: 100px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #555555;
+            margin-bottom: 20px;
+        }
+    }
+}
+.accountInfo{
+    .userImg{
+        margin-left: 38px;
+        margin-top: -20px;
+        img{
+            width: 80px;
+            height: 80px;
+            // background: #b5b5b5;
+            border: 1px solid #b5b5b5;
+            border-radius: 50%;
+        }
+    }
+    .uploadBtn{
+        position: relative;
+        height: 28px;
+        border-radius: 5px;
+        line-height: 27.5px;
+        border: 1px solid #bfbfbf;
+        margin-left: 20px;
+        width: 88px;
+        text-align: center;
+        top: 3px;
+        color: #555555;
+    }
+    .gameList{
+        .myGame{
+            margin-right: 40px;
+            width: 120px;
+        }
+        .gameIcon{
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        .gameName{
+            line-height: 40px;
+            width: 70px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .city{
+        margin-left: 6px;
+    }
+}
+.accountSafe{
+    .label{
+        font-size: 16px;
+        color: #888888;
+        margin-bottom: 16px;
+    }
+    section{
+        margin: 20px 30px;
+    }
+    .safetyIndex{
+        min-height: 200px;
+        .desc{
+            font-size: 16px;
+            margin-left: 72px;
+        }
+        .icon-warnBig{
+            position: relative;
+            top: 4px;
+            margin-right: 6px;
+        }
+        .safetyPro{
+            margin-left: 61px;
+            margin-bottom: 26px;
+            background: url('../img/safetyIndex.png');
+            width:378px; 
+            height: 34px;
+            display: inline-block;
+            &.step1{
+                background-position: 0 0;
+            }
+            &.step2{
+                background-position: 0px -34px;
+            }
+            &.step3{
+                background-position: 0px -68px;
+            }
+        }
+    }
+    .safetyWayWarp{
+        .safeWay{
+            .item{
+                margin: 0px 0 45px 55px;
+            }
+            .itemInfo{
+                width: 300px;
+                position: relative;
+                top: 10px;
+                margin-left: 25px;
+            }
+            .opt{
+                color: #333333;
+            }
+            .desc{
+                color: #888888;
+            }
+            .btnWarp{
+                position: relative;
+                top: 10px;
+            }
+        }
+        .unbind{
+            margin-left: 10px;
+            color: #6093df;
+            cursor: pointer;
+        }
+        a{
+            color: #6093df;
+            &:hover{
+                color: #3e85ee;
+            }
+        }
+    }
+}
+// 实名认证
+.realName{
+    .icon-warnBig{
+        position: relative;
+        float: left;
+        margin-right: 6px;
+    }
+    .desc{
+        margin-bottom: 25px;
+    }
+    .descText{
+        color: #459a32;
+        margin-bottom: 20px;
+    }
+    .title{
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 27px;
+    }
+    .desc-step{
+        margin-left: 25px;
+        li{
+            margin-bottom: 10px;
+        }
+    }
+}
+.choseType{
+    border: 1px solid #d9dce1;
+    height: 36px;
+    padding: 8px 28px;
+    line-height: 36px;
+    color: #555;
+    cursor: pointer;
+    &.selected{
+        color: #6093df;
+        border: 1px solid #6093df;
+    }
+}
+.progress-warp{
+    width: 450px;
+    margin: 40px auto 0 auto;
+    position: relative;
+    .progress-step{
+        position: relative;
+        p{
+            color: #888888;
+            position: absolute;
+            width: 100px;
+            top: -25px;
+        }
+        .step1{
+            left: 0
+        }
+        .step2{
+            text-align: center;
+            left: 50%;
+            margin-left: -50px
+        }
+        .step3{
+            right: 0;
+            text-align: right;
+        }
+    }
+    .progress-step-img{
+        margin: 10px auto 35px auto;
+    }
+    .progress-desc{
+        margin: 0 auto;
+        margin-bottom: 43px;
+        text-align: center;
+        width: 414px;
+        border-radius: 4px;
+        border: 1px dashed #a5a5a5;
+        background: #f7f7f7;
+        .text{
+            color: #555555;
+            margin: 26px 32px;
+        }
+    }
+    .progress-btn{
+        margin: 10px auto;
+        text-align: center;
+    }
+    .desc{
+        margin-left: 40px;
+        height: 36px;
+        line-height: 36px;
+        margin-bottom: 5px;
+        color: #555555;
+    }
+    .success-desc{
+        margin-bottom: 40px;
+    }
+    .form-error{
+        left: 116px;
+    }
+}
+.fomr-main-center{
+    margin-left: -250px;
+}
+
+.isline{
+    border-bottom: 1px dashed #ccc;
+    height: 1px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.findAccountSucc{
+    margin-left: 185px;
+}
+.findAccountSuccDesc{
+    margin-top: 15px;
+    .text{
+        color: #666666;
+    }
+    .num{
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+    }
+    .accountChannelDesc{
+        margin-top: 15px;
+        color: #333333;
+    }
+    .accountChannelName{
+        color: #f76f3a;
+    }
+}

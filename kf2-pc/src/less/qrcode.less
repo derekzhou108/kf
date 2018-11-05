@@ -1,0 +1,59 @@
+.qrcode{
+   z-index: 10;
+   position: fixed;
+   top:50%;
+   margin-top: -50px;
+   right:144px;
+   width: 40px;
+   height:100px;
+   border-radius: 5px;
+  &-wx,&-qq{
+    cursor: pointer;
+    position: relative;
+  }
+  &-wx.active{
+    .icon-wx-qrcode{
+      display: block;
+    }
+  }
+  &-qq.active{
+    .qq-warp{
+      display: block;
+    }
+  }
+  .qq-warp{
+    position: absolute;
+    left: -109px;
+    bottom: 0;
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #d9dce1;
+    width: 109px;
+    display: none;
+  }
+  .mark{
+    background: #f76c35;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    color: #fff;
+  }
+  .qq-text{
+    padding: 10px;
+  }
+  .icon-wx-qrcode{
+    position: absolute;
+    left:-109px;
+    top:-79px;
+    border-left: 1px solid #d9dce1;
+    border-right: 1px solid #d9dce1;
+    display: none;
+  }
+  &-wx:hover{
+    .icon-wx-hover;
+  }
+  &-qq:hover{
+    .icon-qq-hover;
+  }
+}

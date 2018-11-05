@@ -1,0 +1,31 @@
+{
+    "code":10000,
+    "total":11,
+    "msg":"",
+    "data":[
+        {
+            "gameName":"锦绣未央",
+            "serverName":"1区",
+            "roleName":"李未央",
+            "rechargeNum":20200611,
+            "rechargeTime":"2018-3-16",
+            "static":0
+        },
+        {
+            "gameName":"锦绣未央",
+            "serverName":"1区",
+            "roleName":"李未央",
+            "rechargeNum":20200611,
+            "rechargeTime":"2018-3-16",
+            "static":1
+        },
+        {
+            "gameName":"锦绣未央",
+            "serverName":"2区",
+            "roleName":"李未央",
+            "rechargeNum":20200611,
+            "rechargeTime":"2018-3-16",
+            "static":0
+        }
+    ]
+}

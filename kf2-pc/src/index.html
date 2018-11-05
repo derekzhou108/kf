@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+@@include('include/meta.html')
+<script type="text/javascript" src="../dist/js/index.js?rev=@@hash"></script>
+</head>
+<body>
+
+    <xmp is="ms-nav" :widget="{ active: 0 }"></xmp>
+    <xmp is="ms-carousel"></xmp>
+    <xmp is="ms-search"></xmp>
+    <xmp is="ms-marquee"></xmp>
+    <xmp is="ms-qrcode"></xmp>
+
+    <div class="wrap ms-controller" ms-controller="index">
+        <div class="inner">
+
+            <div class="index-hot">
+                <table>
+                    <thead>
+                        <tr class="index-hotTitle"><td colspan="3">热门问题</td></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="index-hotItem" :for="(trKey, tr) in @hotList.slice(0, Math.min(Math.ceil(@hotList.length / 3), 3) )">
+                            <td :for="(tdKey, item) in @hotList.slice(trKey * 3, trKey * 3 + 3 )" style="width: 33.3333%"><a :attr="{ href: '/pc/issue-detail?id=' + @item.id }">{{ @item.title }}</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="index-issue" id="category">
+                <div class="index-issueTitle">常见问题</div>
+                <div class="index-issueList clear">
+                    <div class="index-issueItemWrap" :for="item in @issueList">
+                        <a class="index-issueItem" :click="@goIssueList(item)">
+                            <div class="index-issueIcon" :css="{backgroundImage: 'url(' + @item.icon + ')'}"></div>
+                            <div class="index-issueText">{{ @item.name }}</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="index-service clear">
+                <div class="index-serviceItemWrap">
+                    <div class="index-serviceItem clear disabled">
+                        <div class="index-serviceIcon icon-selfhelp"></div>
+                        <div class="index-serviceTitle">自主服务申请</div>
+                        <div class="index-serviceText">无需排队等，轻松快速办理业务</div>
+                    </div>
+                </div>
+                <div class="index-serviceItemWrap last">
+                    <a class="index-serviceItem clear" href="/pc/select-issue">
+                        <div class="index-serviceIcon icon-online"></div>
+                        <div class="index-serviceTitle">在线问题反馈</div>
+                        <div class="index-serviceText">人工客服解答，享受专业客服服务</div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <xmp is="ms-footer"></xmp>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/myIssue.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="ms-controller" ms-controller="myIssue">
+    <div class="my-issue-table inner">
+        <div class="bread-crumbs">当前位置：<a href="/pc/bind-role-done">个人中心</a> &gt; 我的提单</div>
+        <div  class="innerTable">
+            <div class="list list-issue">
+                <div class="clear"><span class="icon-icon-list u-fl"></span><span class="u-fl label-name">提单信息</span><span class="time u-fr">{{issueList.start_time}}</span></div>
+                <div class="list-content">
+                    <div class="row-item"><span>单号：</span><span>{{issueList.id}}</span></div>
+                    <div class="row-item"><span>服务器：</span><span>{{issueList.server_name}}</span></div>
+                    <div class="row-item"><span>角色名：</span><span>{{issueList.role_name}}</span></div>
+                    <div class="row-item"><span>角色ID：</span><span>{{issueList.role_id}}</span></div>
+                    <div class="row-item"><span>详细描述：</span><span>{{issueList.q_desc}}</span></div>
+                </div>
+            </div>
+            <div class="list list-issue">
+                <div class="clear"><span class="icon-icon-list u-fl"></span><span class="label-name">客服答复</span><span class="time u-fr" :if="issueList.replys && (issueList.replys.length !== 0 )">{{issueList.last_reply_time}}</span></div>
+                <div class="list-content" :for="item in issueList.replys" :if="issueList.replys && (issueList.replys.length !== 0 )">
+                    <div class="row-item u-main-c">客服-{{item.reply_user}}：</div>
+                    <div class="row-item"><pre>{{item.reply_content}}</pre></div>
+                </div>
+                <div class="list-content" :if="issueList.replys && (issueList.replys.length === 0)">
+                    暂无答复！
+                </div>
+            </div>
+
+            <div class="list list-issue server-evaluation" >
+                <div :if="issueList.replys && issueList.replys.length"><span class="icon-icon-list u-fl" ></span><span class="label-name">服务评价</span></div>
+                <div style="margin: 20px 0 0 50px;" :if="(issueList.replys && issueList.replys.length) && !(issueList.evaluation && issueList.evaluation.id)">亲爱的玩家，您好！请问您对本次服务满意吗？欢迎评价指出。</div>
+                <div class="list-content" :if="(issueList.replys && issueList.replys.length) && (issueList.evaluation && issueList.evaluation.id)">
+                    <div class="clear">
+                        <div class="u-fl star-part issueDetailsScore" ms-html="issueList.starView" :visible="issueList.starView"></div>
+                        <div class="evaluate-desc u-fl">
+                            <span :if="issueList.evaluation && issueList.evaluation.satisfied_state ==5">{{issueList.evaluation.satisfied_state}}星  非常满意，不可挑剔 *\( ^ v ^ )/*</span>
+                            <span :if="issueList.evaluation && issueList.evaluation.satisfied_state ==4">{{issueList.evaluation.satisfied_state}}星  比较满意，仍可改善(○^～^○)</span>
+                            <span :if="issueList.evaluation && issueList.evaluation.satisfied_state ==3">{{issueList.evaluation.satisfied_state}}星  一般，还需改善(*＞.＜*)</span>
+                            <span :if="issueList.evaluation && issueList.evaluation.satisfied_state ==2">{{issueList.evaluation.satisfied_state}}星  不满意，比较差( ¯ □ ¯ )</span>
+                            <span :if="issueList.evaluation && issueList.evaluation.satisfied_state ==1">{{issueList.evaluation.satisfied_state}}星  非常不满意，各方面都很差(っ╥╯﹏╰╥c)</span>
+                        </div>
+                    </div>
+                    <div class="server-des" >
+                        {{issueList.evaluation && issueList.evaluation.description}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="operation my-issue-list" style="margin: 50px 0;">
+            <span class="btn-evaluate btn-selected" :if="(issueList.replys && issueList.replys.length) && !(issueList.evaluation && issueList.evaluation.id)" :click="toEvaluation">立即评价</span>
+            <span class="btn-back" :click="window.location.href = '/pc/issue-table' ">返回</span>
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

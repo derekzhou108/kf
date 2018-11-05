@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/issueDetail.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 1 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="wrap ms-controller" ms-controller="issueDetail">
+    <div class="inner">
+        <div class="main">
+            <div class="crumbs">当前位置：<a href="/pc/index">首页</a> &gt; 问题详情</div>
+            <div class="issueDetail">
+                <h2 class="issueDetail-title">{{ @detail.q_title }}</h2>
+                <div :html="@detail.q_desc"></div>
+
+                <div class="issueDetail-helpWrap">
+                    <div class="issueDetail-help clear">
+                        <div class="issueDetail-helpBtn" :class="{ active : @detail.comment == 1 }" :click="@postComment(1)">
+                            <div class="issueDetail-icon yes"></div>
+                            <div class="issueDetail-text">有帮助</div>
+                        </div>
+                        <div class="issueDetail-count">
+                            <div class="issueDetail-total">已有<span class="issueDetail-num">{{ @detail.total }}</span>位玩家参与</div>
+                            <div class="issueDetail-progress"><span class="issueDetail-progressInner" :css="{ width: ( @detail.useful / @detail.total * 100 ).toFixed(2) + '%' }"></span></div>
+                            <div class="issueDetail-ratio">{{ @detail.useful }}：{{ @detail.useless }}</div>
+                        </div>
+                        <div class="issueDetail-helpBtn" :class="{ active : @detail.comment == -1 }" :click="@postComment(-1)">
+                            <div class="issueDetail-icon no"></div>
+                            <div class="issueDetail-text">没帮助</div>
+                        </div>
+                    </div>
+                </div>
+
+                    <button class="form-btn" onclick="util.back()">返回</button>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

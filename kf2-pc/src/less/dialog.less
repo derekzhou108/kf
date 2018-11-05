@@ -1,0 +1,123 @@
+.dialog{
+  &-container{
+    width: 330px;
+    padding:35px 15px;
+    .icon{
+      display: inline-block;
+      position: relative;
+      top:4px;
+      margin-right: 10px;
+    }
+  }
+  &-content{
+    text-align: center;
+  }
+  &-msg{
+    border-radius: 8px !important;
+  }
+  &-confirm{
+    border-radius: 8px !important;
+    .dialog-wrap{
+      padding:40px 15px 40px;
+    }
+  }
+  &-btns{
+    padding: 50px 0 0 20px;
+  }
+  &-btn{
+    width: 100px;
+    height: 35px;
+    background-color: #999;
+    border-radius: 5px;
+    border:none;
+    color:#fff;
+  }
+  &-btnWarp{
+    cursor: pointer;
+    width: 120px;
+    height: 34px;
+    line-height: 34px;
+    background-color: #999;
+    border-radius: 5px;
+    border:none;
+    color:#fff;
+  }
+  &-btnPos{
+    position: absolute;
+    bottom: 35px;
+    margin-left: -60px;
+    left: 50%;
+    text-align: center;
+  }
+  &-yes{
+    background-color: #FF500B;
+  }
+  &-cancel{
+    margin-left: 55px;
+  }
+  &-ok{
+    background-color: #fe6f37;
+    &:hover{
+      background-color: #eb4807;
+    }
+  }
+  &-detail{
+    width: 636px !important;
+    background-color: #fff;
+    border-radius: 5px !important;
+    overflow: hidden;
+  }
+  &-message{
+    background-color: #fff;
+    border-radius: 5px !important;
+    overflow: hidden;
+  }
+  &-detailWrap{
+   position: relative;
+   height: 100%;
+  }
+  &-detailTitle{
+    padding:0 40px;
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f5f6fa;
+    text-align: center;
+    color:#555;
+    font-size: 16px;
+    .ell;
+  }
+  &-detailClose{
+    position: absolute;
+    right:10px;
+    top:10px;
+    cursor: pointer;
+  }
+  &-messageContent{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px 80px 70px 80px;
+    overflow: auto;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+  }
+  &-detailContent{
+    position: absolute;
+    top:40px;
+    right:0;
+    bottom:0;
+    left:0;
+    padding:20px 20px 5px 20px;
+    overflow: auto;
+    img{
+      max-width: 100%;
+    }
+  }
+}

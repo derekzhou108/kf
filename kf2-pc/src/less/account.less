@@ -1,0 +1,231 @@
+.dialog,.account-dialog{
+  background: none !important;
+  box-shadow: none !important;
+  //.layui-layer-content{
+  //  overflow: hidden !important;
+  //}
+}
+
+.account-dialog{
+  .dialog-wrap{
+
+  }
+  .head{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #f5f6fa;
+    font-size: 16px;
+    color:#555;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  .icon-account-close{
+    cursor: pointer;
+    position: absolute;
+    right:13px;
+    top: 10px;
+  }
+  .icon-account-dialog-back{
+    position: absolute;
+    top:13px;
+    left: 15px;
+    cursor: pointer;
+  }
+  .icon-dialog-logo{
+    margin:0 auto;
+  }
+  .dialog-logo-wrap{
+    padding:30px 0;
+  }
+  .login-btn{
+    margin-top: 30px;
+    font-size: 22px;
+    border-radius: 5px;
+  }
+  .login{
+    height: 300px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    .username,.password,.valicode, .phone {
+      position: relative;
+    }
+    .password,.valicode{
+      margin-top: 20px;
+    }
+    .icon-user,.icon-password,.icon-valicode, .icon-phone{
+      position: absolute;
+      left: 50px;
+      top:11px;
+    }
+    .icon-valicode{
+      top:13px;
+    }
+    .phone {
+      .input{
+        width: 188px;
+        border-right: none;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        float: left;
+      }
+      button{
+        height:42px;
+        width: 115px;
+        border:none;
+        background-color: #7D97FF;
+        color:#fff;
+        font-size: 14px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        float: left;
+      }
+    }
+    .btn{
+      button{
+        width: 30%;
+        margin-left: 35%;
+        background-color: #f76c35;
+        height: 34px;
+        border:none;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+    .link{
+      color:#555;
+      padding-right: 10%;
+      font-size: 14px;
+      text-align: right;
+      margin-top: 15px;
+      a{
+        color:#555;
+      }
+    }
+
+    .line{
+      color:#D9DCE1;
+    }
+    h3{
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px 0;
+      height:95px;
+      position: relative;
+
+    }
+    .register-title{
+      margin-top: -10px;
+      margin-bottom: 15px;
+      height: 20px;
+      line-height: 20px;
+      width: 80%;
+      margin-left: 10%;
+      font-size: 16px;
+      color:#888888;
+      span{
+        width: 50%;
+        float: left;
+        cursor: pointer;
+        &.active{
+          color:#FD6443;
+          position: relative;
+        }
+        em{
+          padding:0 20px;
+        }
+      }
+    }
+    .register-title-phone{
+        text-align: left;
+        position: relative;
+        &:before{
+          position: absolute;
+          right:0;
+          top:4px;
+          content: '';
+          width: 0;
+          height: 12px;
+          border-left:1px solid #D9DCE1;
+        }
+    }
+    .register-title-username{
+        text-align: right;
+    }
+  }
+  .login-share{
+    height: 430px;
+  }
+  .login-register{
+    height:370px;
+    h3{
+      height:75px;
+    }
+    .arg{
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 10px;
+      color:#565656;
+      font-size: 12px;
+      float: left;
+      a{
+        color:#FD6443;
+      }
+      .account-has{
+        color: #7d97ff;
+        font-size: 14px;
+        float: right;
+      }
+    }
+    .login-btn{
+      margin-top: 20px;
+    }
+  }
+  .login-forget{
+    height: 330px;
+  }
+  .input{
+    border:1px solid #D9DCE1;
+    height: 42px;
+    line-height: 40px;
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 30px;
+    font-size: 14px;
+    border-radius:5px;
+    &:focus{
+      border-color:#999;
+      outline: none;
+    }
+  }
+  .change{
+    height: 330px;
+    .input{
+      padding-left: 10px;
+    }
+  }
+  .account-dialog-msg{
+    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    top: 135px;
+    height:0;
+    line-height: 0px;
+    color:#BABABA;
+    border-top:1px solid #EBEBEB;
+    span{
+      background-color: #fff;
+      padding:0 20px;
+    }
+  }
+
+}
+.account-dialog .btn button:hover{
+  background-color: #f78457;
+}
+input:-webkit-autofill {
+  box-shadow: 0 0 0 400px #fff inset;
+}

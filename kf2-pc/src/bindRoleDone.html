@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/bindRoleDone.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="wrap ms-controller" ms-controller="bindRoleDone">
+    <div class="inner">
+        <div class="main">
+            <div class="crumbs">当前位置：<a href="/pc/bind-role-done">个人中心</a> &gt; 绑定角色</div>
+            <div class="form-title"><span class="icon-form-title"></span>所有游戏角色</div>
+            <div class="clear">
+                <div class="role-wrap" :for="(key, item) in @list">
+                    <div class="role-item" :class="{ active: @item.selected }" :click="@selected(key, item)">
+                        <div class="role-icon" :css="{backgroundImage: 'url(' + @item.icon + ')'}"></div>
+                        <div class="role-name">{{ @item.roleName }}</div>
+                        <div class="role-text">{{ @item.serverName }}</div>
+                    </div>
+                </div>
+                <div class="role-new" :click="@goBind">
+                    <div class="icon-bind-new role-newIcon"></div>
+                    <div class="role-newText">绑定新角色</div>
+                </div>
+            </div>
+            <div class="bindRole-btns bindRoleDone-btns">
+                <button class="form-btn submit" :attr="{ disabled: !@item }" :click="@goIssue">我要提问</button>
+                <button class="form-btn submit" :attr="{ disabled: !@item }" :click="@unBind">解除绑定</button>
+                <button class="form-btn" onclick="util.back()">返回</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

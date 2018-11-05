@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/bindRoleSelect.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="wrap ms-controller" ms-controller="bindRoleSelect">
+    <div class="inner">
+        <div class="main bindRole">
+            <div class="crumbs">当前位置：<a href="/pc/bind-role-done">个人中心</a> &gt; 绑定角色</div>
+            <div class="form-title"><span class="icon-form-title"></span>请选择绑定角色</div>
+            <div class="clear">
+
+                <div class="role-wrap" :for="(key, item) in @list" :if="! @item.binded">
+                    <div class="role-item" :class="{ active: @item.selected }" :click="@selected(key, item)">
+                        <div class="role-icon" :css="{backgroundImage: 'url(' + @icon + ')'}"></div>
+                        <div class="role-name">{{ @item.roleName }}</div>
+                        <div class="role-text ell">{{ @item.channelName }}<span style="margin-right: 5px;"></span>{{ @item.serverName }}</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-title"><span class="icon-form-title"></span>已绑定角色</div>
+            <div class="clear">
+
+                <div class="role-wrap" :for="item in @list" :if="@item.binded">
+                    <div class="role-item">
+                        <div class="role-icon" :css="{backgroundImage: 'url(' + icon + ')'}"></div>
+                        <div class="role-name">{{ @item.roleName }}</div>
+                        <div class="role-text">{{ @item.channelName }}<span style="margin-right: 5px;"></span>{{ @item.serverName }}</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="bindRole-btns">
+                <button class="form-btn" onclick="util.back()">返回</button>
+                <button class="form-btn submit" :click="bindRole">绑定</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/issueTable.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="ms-controller" ms-controller="issueTable">
+    <div class="my-issue-table inner">
+        <div class="bread-crumbs">当前位置：<a href="/pc/bind-role-done">个人中心</a> &gt; 我的提单</div>
+        <div  class="">
+            <table class="innerTable layui-table  u-fs14" lay-skin="line">
+                <thead>
+                <tr>
+                    <th ms-for="item in tableData.headList" >{{item}}</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ms-for="item in newDataList">
+                    <td>{{item.app_name}}</td>
+                    <td>{{item.id}}</td>
+                    <td class=""><div class="problemDetails"><a class="" :attr="{href:'/pc/my-issue?id='+ item.id}">{{item.desc}}</a></div></td>
+                    <td>
+                        <a class="main-color" :if="(item.reply_status == 0)" :attr="{href:'/pc/my-issue?id='+ item.id}">未答复</a>
+                        <a :if="(item.reply_status == 1)" :attr="{href:'/pc/my-issue?id='+ item.id}">已答复</a>
+                    </td>
+                    <td>{{item.time * 1000 | date('yyyy.MM.dd HH:mm:ss') }}</td>
+                    <td><span :if="item.lastReplyTime">{{ item.lastReplyTime * 1000 | date('yyyy.MM.dd HH:mm:ss') }}</span><span :if="!item.lastReplyTime">/</span></td>
+                    <td>
+                        <div :if="(item.reply_status == 0)">/</div>
+                        <div :if="(item.reply_status == 1)">
+                            <a class="main-color" :attr="{href:'/pc/evaluate?id='+ item.id + '&role_id=' + item.role_id + '&appId=' + item.appId }" :if="(item.evaluation == 0)">未评价</a>
+                            <a :attr="{href:'/pc/my-issue?id='+ item.id}" :if="(item.evaluation == 1)">已评价</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <xmp is="ms-paging" :widget="{count:@count,jump:@jump,limit:@limit}"></xmp>
+    </div>
+</div>
+
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/evaluate.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="ms-controller" ms-controller="myEvaluate">
+    <div class="my-issue-table inner">
+        <div class="bread-crumbs">当前位置：<a href="/pc/bind-role-done">个人中心</a> &gt; 我的提单</div>
+        <div  class="innerTable">
+            <div class="list list-issue-state">
+                <div class="clear"><span class="icon-icon-list u-fl"></span><span class="u-fl label-name">请问您的问题是否得到解决？</span></div>
+                <div class="operation">
+                    <div class="issueState" :class="(isSelected == 1 ? 'btn-selected':'')" :click="(isSelected=1)"><span class="icon-good"></span><span class="btn-evaluate">已解决</span></div>
+                    <div class="issueState" :class="(isSelected == 1 ? '': 'btn-selected')" :click="(isSelected=0)"><span class="icon-bad"></span><span class="btn-back">未解决</span></div>
+                </div>
+            </div>
+            <div class="list list-issue-raty">
+                <div class="clear"><span class="icon-icon-list u-fl"></span><span class="label-name">请对本次服务进行评分</span></div>
+                <div class="list-content">
+                    <!--<div style="text-align: center;margin: 0 auto">-->
+
+                    <!--</div>-->
+                    <div id="star-list " class="star-raty">
+                        <div class="star-part" :mouseleave="starOff()">
+                            <span class="star-item icon-star-great" data-index="1" ms-on-mouseover-1="starChange($event)" ms-on-click-2="starSelected($event)"></span>
+                            <span class="star-item icon-star-great" data-index="2" ms-on-mouseover-1="starChange($event)" ms-on-click-2="starSelected($event)"></span>
+                            <span class="star-item icon-star-great" data-index="3" ms-on-mouseover-1="starChange($event)" ms-on-click-2="starSelected($event)"></span>
+                            <span class="star-item icon-star-great" data-index="4" ms-on-mouseover-1="starChange($event)" ms-on-click-2="starSelected($event)"></span>
+                            <span class="star-item icon-star-great" data-index="5" ms-on-mouseover-1="starChange($event)" ms-on-click-2="starSelected($event)"></span>
+                        </div>
+                        <div class="raty-desc-great":if="@selectedNum ==5"><span>{{@selectedNum}}</span>星  非常满意，不可挑剔 *\( ^ v ^ )/* </div>
+                        <div class="raty-desc-great":if="@selectedNum ==4"><span>{{@selectedNum}}</span>星  比较满意，仍可改善(○^～^○) </div>
+                        <div class="raty-desc-great":if="@selectedNum ==3"><span>{{@selectedNum}}</span>星  一般，还需改善（*&gt;.&lt;*）~ </div>
+                        <div class="raty-desc-great":if="@selectedNum ==2"><span>{{@selectedNum}}</span>星  不满意，比较差( ¯ □ ¯ ) </div>
+                        <div class="raty-desc-great":if="@selectedNum ==1"><span>{{@selectedNum}}</span>星  非常不满意，各方面都很差(っ╥╯﹏╰╥c) </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="list list-issue-ques" hidden>
+                <div><span class="icon-icon-list u-fl"></span><span class="label-name">指出不足</span></div>
+                <div class="list-content">
+                    <div class="u-tc">
+                        <div class="tag-names">
+                            <span class="tag-item" :click="selectProTag(key,$event)" :for="item in evaluationDescs">{{item}}</span>
+                        </div>
+                        <div><textarea class="suggestTxt" name="" id="" cols="40" rows="10" placeholder="欢迎给我们的服务提建议~"></textarea></div>
+                    </div>
+                </div>
+            </div>
+            <div class="operation u-ml22">
+                <div class="btn-submit btn-selected" :click="submit()"><span class=" "><span class=""></span>提交评价</span></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+</body>
+</html>

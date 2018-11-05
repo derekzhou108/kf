@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @@include('include/meta.html')
+    <script type="text/javascript" src="../dist/js/accountSafe.js?rev=@@hash"></script>
+</head>
+<body>
+
+<xmp is="ms-nav" :widget="{ active: 4 }"></xmp>
+<xmp is="ms-carousel"></xmp>
+<xmp is="ms-search"></xmp>
+<xmp is="ms-marquee"></xmp>
+<xmp is="ms-qrcode"></xmp>
+
+<div class="wrap ms-controller service accountSafe" ms-controller="accountSafe">
+    <div class="inner">
+        <div class="main searchResult">
+            <div class="crumbs">当前位置：<a class="crumbName" ms-attr="{href: @crumbPath}">个人中心</a> &gt; <span class="currentModule">{{currentModule}}</span> </div>
+            <div class="subModuleContent">
+
+                <!-- 安全指数 -->
+                <section class="safetyIndex">
+                    <div class="label"><icon class="icon-form-title ms-inBlack"></icon><span>安全指数</span></div>
+                    <div class="safetyPro" :class="'step'+@step"></div>
+                    <div class="static-warn desc" :if="@step < 3"><icon class="icon-warnBig ms-inBlack"></icon>您的帐号不够安全，请设置以下安全措施。</div>
+                </section>
+                <div class="isline"></div>
+                <!-- 安全措施 -->
+                <section class="safetyWayWarp">
+                    <div class="label"><icon class="icon-form-title  ms-inBlack"></icon>安全措施</div>
+                    <div class="safeWay">
+                        <div class="item bindPhone clear">
+                            <span class="icon-bindPhone u-fl"></span>
+                            <div class="u-fl itemInfo">
+                                <p class="opt">绑定手机
+                                    <span class="phoneNum"></span>
+                                    <span class="static-warn" :if="@isBindPhone ==0">（未绑定）</span>
+                                    <span class="u-fb" :if="@isBindPhone ==1">{{@phoneNum}}</span>
+                                    <!-- <span class="unbind" :if="@isBindPhone ==1" :click="goService('解绑手机',1)">解除绑定</span> -->
+                                </p>
+                                <p class="desc">用于找回帐号、密码和申诉等服务。</p>
+                            </div>
+                            <div class="btnWarp u-fl" :if="@isBindPhone==0"><button class="form-btn  submit" :click="goService('绑定手机',0)">立即绑定</button></div>
+                        </div>
+                        <div class="item bindEmail clear">
+                            <span class="icon-bindEmail u-fl"></span>
+                            <div class="u-fl itemInfo">
+                                <p class="opt">绑定邮箱
+                                    <span class="emailNum"></span>
+                                    <span class="static-warn" :if="@isBindEmail ==0">（未绑定）</span>
+                                    <span class="u-fb" :if="@isBindEmail ==1">{{@emailNum}}</span>
+                                    <!-- <span class="unbind" :if="@isBindEmail ==1"><a href="/dist/serviceModule.html?moduleName=解绑邮箱&type=3">解除绑定</a></span> -->
+                                </p>
+                                <p class="desc">用于找回密码和申诉等服务。</p>
+                            </div>
+                            <div class="btnWarp u-fl" :if="@isBindEmail ==0"><button class="form-btn  submit" :click="goService('绑定邮箱',2)">立即绑定</button></div>
+                        </div>
+                        <div class="item trueName clear">
+                            <span class="icon-trueName u-fl"></span>
+                            <div class="u-fl itemInfo">
+                                <p class="opt">实名认证
+                                    <span class="userName"></span>
+                                    <span class="static-warn" :if="@isVerifyRealName==0">（未认证）</span>
+                                    <span class="static-normal u-fb" :if="@isVerifyRealName==1">已认证</span>
+                                </p>
+                                <p class="desc">用于找回密码和申诉等服务。</p>
+                            </div>
+                            <div class="btnWarp u-fl" :if="@isVerifyRealName==0"><button class="form-btn  submit" :click="openLink()">立即认证</button></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<xmp is="ms-footer"></xmp>
+
+</body>
+</html>

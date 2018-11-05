@@ -1,0 +1,89 @@
+// .footer{
+//   height: 90px;
+//   line-height: 90px;
+//   text-align: center;
+//   border-top:1px solid #d9dce1;
+//   color:#888;
+// }
+
+.ks-footer {
+  color: #b5b5b5;
+  font-size: 14px;
+  background: #fff;
+  padding-top: 65px;
+  padding-bottom: 120px;
+  &.bdt {
+      border-top: 1px solid #e1e1e5;
+  }
+  .ks-container {
+      display: table;
+  }
+  .ks-container {
+    width: 1260px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+}
+  .ks-logo {
+      width: 220px;
+      display: table-cell;
+      vertical-align: middle;
+  }
+  .ks-content {
+      display: table-cell;
+      vertical-align: top;
+      width: 700px;
+      .menu {
+          border-bottom: 1px solid #e6e6e6;
+          .item {
+              float: left;
+              height: 24px;
+              line-height: 24px;
+              margin: 12px 0;
+              a {
+                  padding: 0 35px;
+                  position: relative;
+                  display: block;
+                  border-right: 1px solid #e6e6e6;
+                  color: #b5b5b5;
+                  &:hover {
+                      color: #555;
+                  }
+              }
+              &:first-of-type a {
+                  padding-left: 0;
+              }
+              &:last-of-type a {
+                  border: none;
+              }
+          }
+      }
+      .copyright,
+      .tip {
+          line-height: 2.2;
+          .tip-item{
+            margin-right: 20px;
+          }
+      }
+  }
+  .ks-watch {
+      display: table-cell;
+      vertical-align: top;
+      width: 340px;
+      font-size: 0;
+      .watch-list {
+          display: table;
+          height: 100%;
+          .watch-item {
+              display: table-cell;
+              vertical-align: middle;
+              padding-left: 58px;
+              .desc {
+                  display: block;
+                  color: #000;
+                  font-size: 14px;
+              }
+          }
+      }
+  }
+}
